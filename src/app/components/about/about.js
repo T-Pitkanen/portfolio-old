@@ -16,9 +16,9 @@ const About = () => {
 				<p>
 					{' '}
 					I have advanced skills in HTML and CSS, and I'm also familiar with
-					JavaScript, particularly React. Additionally, I have some experience
-					with SCSS, Tailwind, Node.js, Next.js, and MongoDB, having used them
-					in a couple of my projects.
+					JavaScript, particularly React. <br></br>Additionally, I have some
+					experience with SCSS, Tailwind, Node.js, Next.js, and MongoDB, having
+					used them in a couple of my projects.
 				</p>{' '}
 				<p>
 					{' '}

@@ -29,3 +29,12 @@
 .aboutText p {
   font-size: 19px;
 }
+
+
+@media (min-width: 1025px) {
+  .container {
+
+    width: 60%;
+
+  }
+}

@@ -1,7 +1,7 @@
 const projectData = [
 	{
 		title: 'Project 1',
-		image: '/project1.jpg',
+		image: '/test.png',
 		goal: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
 		design:
 			'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
@@ -9,7 +9,7 @@ const projectData = [
 	},
 	{
 		title: 'Project 2',
-		image: '/project2.jpg',
+		image: '/test.png',
 		goal: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
 		design:
 			'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
@@ -17,7 +17,7 @@ const projectData = [
 	},
 	{
 		title: 'Project 3',
-		image: '/project3.jpg',
+		image: '/test.png',
 		goal: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
 		design:
 			'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
@@ -25,7 +25,7 @@ const projectData = [
 	},
 	{
 		title: 'Project 4',
-		image: '/project4.jpg',
+		image: '/test.png',
 		goal: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
 		design:
 			'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',

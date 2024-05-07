@@ -55,8 +55,12 @@
 }
 
 .projectImage {
-  width: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+
 
 .infoContainer h3 {
 
@@ -87,4 +91,30 @@
   background-color: #D6D6D6;
   width: 50%;
   margin: auto;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1910px) {
+  .container {
+
+    width: 60%;
+
+  }
+
+  .projectInfo {
+
+    width: 100%;
+
+  }
+
+  .project {
+
+    padding-bottom: 20vh;
+
+  }
+
+
+  .projects p {
+    font-size: 19px;
+  }
 }

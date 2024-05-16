@@ -39,9 +39,9 @@ const projectData = [
 	{
 		title: 'Hotel Solace',
 		image: '/solace/2.jpg',
-		goal: 'Create an InfoScreen for hotel reception room to provide guests with essential information. The Info Screen will have a 16:9 aspect ratio and a maximum width of 1920px. It will include a dynamic calendar, a real-time news feed, current weather updates, and an accurate clock. The slides will rotate at regular intervals to highlight relevant content.',
+		goal: 'Create an InfoScreen for hotel reception to give guests essential information. The Info Screen will have a 16:9 aspect ratio and a maximum width of 1920px. It will include a dynamic calendar, a real-time news feed, current weather updates, and an accurate clock. The slides will rotate at regular intervals to highlight relevant content.',
 		design:
-			'Free hands to create the Info Screen interface that reflects the hotel\'s aesthetic while maintaining usability and functionality.',
+			'Free hands to create the interface, that reflects the hotel\'s aesthetic while maintaining usability and functionality.',
 		code: 'HTML, CSS and Vanilla JS.',
 	},
 	{

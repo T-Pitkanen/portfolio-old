@@ -1,7 +1,11 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 10vh;
-  width: 40%;
-  color: #A3A3A3;
+  width: 100%;
+  color: #a3a3a3;
 }
 
 .introText {
@@ -13,19 +17,19 @@
 
 .introText h1 {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .introText p {
   width: auto;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 1.5;
 }
 
 .container hr {
   border: none;
   height: 1px;
-  background-color: #D6D6D6;
+  background-color: #d6d6d6;
   width: auto;
 }
 
@@ -33,32 +37,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  /* gap: 1rem; */
+}
+
+.introProjects a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introProjects p {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
-  border-right: 1px solid #D6D6D6;
+  border-right: 1px solid #d6d6d6;
+  font-size: 25px;
+  padding-top: 3vh;
 }
-
 
 .faIcon {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
-
 @media (min-width: 1025px) {
-
-
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
 
 }

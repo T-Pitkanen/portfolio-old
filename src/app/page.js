@@ -8,9 +8,11 @@ import Projects from './components/projects/projects';
 export default function Home() {
 	return (
 		<main className={styles.main}>
+			<div className={styles.pageContainer}>
 			<Intro />
 			<About />
 			<Projects />
+			</div>
 		</main>
 	);
 }

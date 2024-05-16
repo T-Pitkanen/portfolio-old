@@ -1,33 +1,32 @@
-import styles from './about.module.css';
+import styles from "./about.module.css";
 
 const About = () => {
-	return (
-		<div className={styles.container}>
-			<div className={styles.aboutText}>
-				<h2>ABOUT ME</h2>
-				<p>
-					I'm Tiia, a web development student from Finland. I'm passionate about
-					creating beautiful, user-friendly websites and web applications.
-				</p>
-				<p>
-					Currently, I'm studying web development at Media College Denmark and
-					am set to graduate in April 2024.
-				</p>{' '}
-				<p>
-					{' '}
-					I have advanced skills in HTML and CSS, and I'm also familiar with
-					JavaScript, particularly React. <br></br>Additionally, I have some
-					experience with SCSS, Tailwind, Node.js, Next.js, and MongoDB, having
-					used them in a couple of my projects.
-				</p>{' '}
-				<p>
-					{' '}
-					I'm eager to further expand my knowledge in web development and work
-					on real-world projects.
-				</p>
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.container}>
+      <div className={styles.aboutText}>
+        <h2>ABOUT ME</h2>
+        <p>I'm Tiia, a freshly graduated web developer from Finland.</p>
+        <p>
+          I graduated from web development studies at Media College Denmark in
+          April 2024. Currently, I'm living in Finland and I'm looking for my
+          first job in the field.
+        </p>{" "}
+        <p>
+          {" "}
+          I'm competent in HTML and CSS, and I'm also familiar with JavaScript,
+          particularly React and Next.js. Working with React and Next.js is what I'm
+          currently most interested in, but I'm always willing to learn about
+          new systems and technologies.<br></br>I have some
+          experience with SCSS, Tailwind, Node.js and MongoDB, having
+          used them in a couple of my projects.
+        </p>{" "}
+        <p>
+          {" "}
+          I'm excited to work on actual projects and improve my knowledge.
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default About;

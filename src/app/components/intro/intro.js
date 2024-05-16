@@ -7,12 +7,12 @@ const Intro = () => {
 			<div className={styles.introText}>
 				<h1>HI!</h1>
 				<p>I'M TIIA</p>
-				<p>A WEB DEVELOPER STUDENT</p>
+				<p>JUNIOR WEB DEVELOPER</p>
 				<div className={styles.introProjects}>
 					<hr />
 					<p>
 						SEE MY PROJECTS
-						<FaCaretDown className={styles.faIcon} />
+						<a href="#projects"><FaCaretDown className={styles.faIcon} /></a>
 					</p>
 				</div>
 			</div>

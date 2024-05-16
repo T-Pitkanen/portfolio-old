@@ -18,8 +18,9 @@ const Projects = () => {
 								index % 2 === 0 ? styles.row : styles.rowReverse
 							}`}
 						>
-							<div className={styles.projectImg}>
+							<div className={styles.projectImgContainer}>
 								<Image
+									className={styles.projectImage}
 									src={project.image}
 									alt={project.title}
 									width={300}

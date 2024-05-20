@@ -6,7 +6,7 @@ const Intro = () => {
 		<div className={styles.container}>
 			<div className={styles.introText}>
 				<h1>HI!</h1>
-				<p>I'M TIIA</p>
+				<h2>I'M TIIA</h2>
 				<p>JUNIOR WEB DEVELOPER</p>
 				<div className={styles.introProjects}>
 					<hr />

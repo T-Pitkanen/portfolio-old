@@ -15,14 +15,16 @@
   gap: 0.5rem;
 }
 
-.introText h1 {
+.introText h1, .introText h2 {
   font-weight: 400;
-  font-size: 45px;
+  font-size: 60px;
 }
+
+
 
 .introText p {
   width: auto;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.5;
 }
 

@@ -16,7 +16,7 @@ const About = () => {
           I'm competent in HTML and CSS, and I'm also familiar with JavaScript,
           particularly React and Next.js. Working with React and Next.js is what I'm
           currently most interested in, but I'm always willing to learn about
-          new systems and technologies.<br></br>I have some
+          new systems and technologies.<br></br><br></br>I have some
           experience with SCSS, Tailwind, Node.js and MongoDB, having
           used them in a couple of my projects.
         </p>{" "}

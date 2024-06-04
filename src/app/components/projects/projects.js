@@ -56,8 +56,8 @@ const Projects = () => {
                           className={styles.projectImg}
                           src={image}
                           alt={`project image ${index + 1}`}
-                          width={500}
-                          height={500}
+                          width={800}
+                          height={800}
                         />
                       </div>
                     </swiper-slide>

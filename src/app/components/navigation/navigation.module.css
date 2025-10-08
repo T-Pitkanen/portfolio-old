@@ -22,4 +22,9 @@
   .navigation {
     padding: 0em 20em;
   }
+
+  .navigation img {
+    width: 100px;
+    height: auto;
+  }
 }

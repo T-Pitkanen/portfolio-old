@@ -1,6 +1,6 @@
 .topicContainer {
   border-top: 1px solid #d6d6d6;
-  padding: 2rem 0rem;
+  padding: 5rem 8rem;
   max-width: 60%;
   margin: 5vh auto;
   color: rgb(221, 221, 221);
@@ -32,6 +32,7 @@
 .topicContainer p {
   line-height: 1.6;
   margin-bottom: 1rem;
+
 }
 
 /* Subtopics list (grid with equal-width cards) */
@@ -63,6 +64,13 @@
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
+}
+
+
+
+.figure img {
+  max-width: 50%;
+  height: auto;
 }
 
 

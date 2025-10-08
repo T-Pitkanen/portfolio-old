@@ -13,44 +13,68 @@ export async function generateStaticParams() {
 function RenderBlock({ block }) {
   if (!block) return null;
 
-  // plain string -> paragraph
+  // plain string -> paragraph (only render non-empty)
   if (typeof block === "string") {
-    return <p className={styles.blockParagraph}>{block}</p>;
+    const text = block.trim();
+    if (!text) return null;
+    return <p className={styles.blockParagraph}>{text}</p>;
   }
 
-  switch (block.type) {
-    case "header":
-      return <h2 className={styles.blockHeader}>{block.text}</h2>;
+  const type = block.type;
 
-    case "paragraph":
-      return <p className={styles.blockParagraph}>{block.text}</p>;
-
-    case "image":
-      return (
-        <figure className={styles.figure}>
-          <Image
-            src={block.src}
-            alt={block.alt || ""}
-            width={1200}
-            height={800}
-            className={styles.blockImage}
-          />
-          {block.caption && <figcaption className={styles.caption}>{block.caption}</figcaption>}
-        </figure>
-      );
-
-    case "section":
-      return (
-        <section className={styles.section}>
-          {block.title && <h3 className={styles.sectionTitle}>{block.title}</h3>}
-          {Array.isArray(block.children) &&
-            block.children.map((child, i) => <RenderBlock key={i} block={child} />)}
-        </section>
-      );
-
-    default:
-      return null;
+  // header (only if text exists)
+  if (type === "header") {
+    const txt = block.text?.trim();
+    if (!txt) return null;
+    return <h2 className={styles.blockHeader}>{txt}</h2>;
   }
+
+  // paragraph (only if text exists)
+  if (type === "paragraph") {
+    const txt = block.text?.trim();
+    if (!txt) return null;
+    return <p className={styles.blockParagraph}>{txt}</p>;
+  }
+
+  // image (only render when src exists)
+  if (type === "image") {
+    if (!block.src) return null;
+    return (
+      <figure className={styles.figure}>
+        <Image
+          src={block.src}
+          alt={block.alt || ""}
+          width={1200}
+          height={800}
+          className={styles.blockImage}
+        />
+        {block.caption && <figcaption className={styles.caption}>{block.caption}</figcaption>}
+      </figure>
+    );
+  }
+
+  // section (only render when children array has at least one renderable block)
+  if (type === "section") {
+    const children = Array.isArray(block.children) ? block.children : [];
+    const hasRenderable = children.some((c) => {
+      if (!c) return false;
+      if (typeof c === "string") return !!c.trim();
+      if (c.type === "image") return !!c.src;
+      return !!(c.text && String(c.text).trim()) || (Array.isArray(c.children) && c.children.length);
+    });
+    if (!hasRenderable) return null;
+
+    return (
+      <section className={styles.section}>
+        {block.title && <h3 className={styles.sectionTitle}>{block.title}</h3>}
+        {children.map((child, i) => (
+          <RenderBlock key={i} block={child} />
+        ))}
+      </section>
+    );
+  }
+
+  return null;
 }
 
 export default function SubtopicPage({ params }) {

@@ -16,3 +16,10 @@
     padding: 0 0%;
   }
 }
+
+
+@media (min-width: 1910px) {
+  .navigation {
+    padding: 0em 20em;
+  }
+}

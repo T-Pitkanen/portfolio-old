@@ -13,7 +13,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className={styles.copyright}>
-				<span>© 2024 Tiia Pitkänen. All rights reserved.</span>
+				<span>© 2025 Tiia Pitkänen. All rights reserved.</span>
 			</div>
 		</div>
 	);

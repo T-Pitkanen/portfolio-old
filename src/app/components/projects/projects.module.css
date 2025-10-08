@@ -194,6 +194,10 @@
 @media (min-width: 1910px) {
 
 
+  .container{
+    margin-top: 5vh;
+  }
+
 
   .projectImage img {
     object-fit: cover;
@@ -210,7 +214,6 @@
 
   .slider {
     width: 40vw;
-    height: auto;
   }
 
   .projectImage {

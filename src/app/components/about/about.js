@@ -5,11 +5,12 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.aboutText}>
         <h2>ABOUT ME</h2>
-        <p>I'm Tiia, a freshly graduated web developer from Finland.</p>
+        <p>I'm Tiia, a freshly graduated web developer and Business Information Technology student in Vaasa University of Applied Sciences.</p>
         <p>
-          I graduated from web development studies at Media College Denmark in
-          April 2024. Currently, I'm living in Finland and I'm looking for my
-          first job in the field.
+          I graduated with a web development degree at Media College Denmark in
+          April 2024. Currently, I'm living in Finland and I'm studying Business
+          Information Technology at Vaasa University of Applied Sciences. I will
+          graduate around christmas time in 2028.
         </p>{" "}
         <p>
           {" "}

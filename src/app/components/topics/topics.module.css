@@ -92,6 +92,18 @@
 
 }
 
+.buttonContainer button:hover{
+  background-color: #c4c4c4;
+  color: black;
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .arrowIcon{
   padding-top: 5px;
   font-size: 16px;

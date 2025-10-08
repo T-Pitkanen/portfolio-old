@@ -5,7 +5,8 @@ import styles from "./topics.module.css";
 export default function TopicsIndex() {
   return (
     <main className={styles.container}>
-      <h1>ALL TOPICS</h1>
+      <Link href="/" className={styles.back}>← Back</Link>
+      <h1>All Topics</h1>
       <p className={styles.intro}>Click a topic to read more.</p>
       <ul className={styles.list}>
         

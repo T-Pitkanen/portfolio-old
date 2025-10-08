@@ -11,7 +11,7 @@ export default function Home() {
 		<main className={styles.main}>
 			<div className={styles.pageContainer}>
 			<Intro />
-		
+
 			<About />
 			<TopicsPage limit={3} />
 			<Projects />

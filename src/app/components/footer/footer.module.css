@@ -23,12 +23,12 @@
 .footerIcon {
   color: white;
   border-right: 1px solid #D6D6D6;
-  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .faIcon {
 
-  font-size: 3rem;
+  font-size: 2rem;
   margin-right: 3rem;
 }
 
@@ -40,4 +40,38 @@
 .copyright {
   font-size: 15px;
   color: #A7A7A7;
+}
+
+
+.cv {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.cvLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: background 0.12s ease, transform 0.12s ease;
+}
+
+.cvLink:hover {
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-1px);
+}
+
+.cvText {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.faIconDownload {
+  font-size: 1rem;
 }

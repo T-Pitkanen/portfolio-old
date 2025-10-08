@@ -139,6 +139,8 @@
   cursor: pointer;
 }
 
+
+
 @media (max-width: 1025px) {
 }
 
@@ -212,8 +214,14 @@
     align-items: start;
   }
 
+  .projectsIntro{
+    padding-bottom: 0vh;
+    margin: 3vh 0;
+  }
+
   .slider {
     width: 40vw;
+    height: 40vh;
   }
 
   .projectImage {

@@ -24,6 +24,13 @@
   text-underline-offset: 10px;
 }
 
+.container p {
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-size: 18px;
+  color: rgb(218, 218, 218);
+}
+
 .list {
   list-style: none;
   margin-top: 1em;
@@ -43,6 +50,10 @@
   color: rgb(14, 14, 14);
   width: 100%;
   box-sizing: border-box;
+}
+
+.card p {
+  color: black;
 }
 
 .link {

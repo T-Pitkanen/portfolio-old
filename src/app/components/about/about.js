@@ -5,25 +5,36 @@ const About = () => {
     <div className={styles.container}>
       <div className={styles.aboutText}>
         <h2>ABOUT ME</h2>
-        <p>I'm Tiia, a freshly graduated web developer and Business Information Technology student in Vaasa University of Applied Sciences.</p>
         <p>
-          I graduated with a web development degree at Media College Denmark in
-          April 2024. Currently, I'm living in Finland and I'm studying Business
-          Information Technology at Vaasa University of Applied Sciences. I will
-          graduate around christmas time in 2028.
+          {" "}
+          Hey! I'm Tiia — a web developer and Business Information Technology
+          student at Vaasa University of Applied Sciences in Finland. I
+          graduated from Media College Denmark in April 2024 with a degree in
+          Web Development, and now I'm continuing to grow my skills in both tech
+          and business.{" "}
         </p>{" "}
         <p>
           {" "}
-          I'm competent in HTML and CSS, and I'm also familiar with JavaScript,
-          particularly React and Next.js. Working with React and Next.js is what I'm
-          currently most interested in, but I'm always willing to learn about
-          new systems and technologies.<br></br><br></br>I have some
-          experience with SCSS, Tailwind, Node.js and MongoDB, having
-          used them in a couple of my projects.
+          I'm really into everything technical and lately I've been getting more
+          interested in data analytics and Python. I've worked a lot with Excel
+          and SQL, and I’m excited to keep learning more about databases and
+          cybersecurity too.{" "}
         </p>{" "}
         <p>
           {" "}
-          I'm excited to work on actual projects and improve my knowledge.
+          Alongside the technical side, my Business IT studies have also given
+          me experience in marketing, entrepreneurship, and other
+          business-related topics, which I think balance things out nicely.{" "}
+        </p>{" "}
+        <p>
+          {" "}
+          I’m comfortable with HTML and CSS, and I enjoy working with JavaScript
+          — especially React and Next.js. I’ve also used SCSS, Tailwind,
+          Node.js, and MongoDB in a few of my projects.{" "}
+        </p>{" "}
+        <p>
+          {" "}
+          I love learning new things and working on projects that help me grow.{" "}
         </p>
       </div>
     </div>

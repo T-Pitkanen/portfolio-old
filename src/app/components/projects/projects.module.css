@@ -110,9 +110,8 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  
 }
-.closeButton button{
+.closeButton button {
   margin-left: 70vw;
   background-color: #ffffff;
   color: #000;
@@ -124,13 +123,13 @@
   cursor: pointer;
 }
 
-.modalButtons{
+.modalButtons {
   margin-top: 3vh;
   display: flex;
   gap: 4em;
 }
 
-.modalButtons button{
+.modalButtons button {
   background-color: #ffffff;
   color: #000;
   border: 1px solid black;
@@ -138,7 +137,6 @@
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
-
 }
 
 @media (max-width: 1025px) {
@@ -191,17 +189,28 @@
   }
 }
 
+
+/* DESKTOP */
 @media (min-width: 1910px) {
 
-  .slider {
-    width: 30vw;
-    height: 50vh;
-  }
-  
+
+
   .projectImage img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  .project {
+    width: 100%;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .slider {
+    width: 40vw;
+    height: auto;
   }
 
   .projectImage {

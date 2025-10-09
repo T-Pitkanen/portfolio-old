@@ -7,17 +7,17 @@ const About = () => {
         <h2>ABOUT ME</h2>
         <p>
           {" "}
-          Hey! I'm Tiia — a Business Information Technology student at Vaasa
+          Hey! I&#39;m Tiia — a Business Information Technology student at Vaasa
           University of Applied Sciences in Finland. I graduated from Media
           College Denmark in April 2024 with a degree in Web Development, and
-          now I'm continuing to grow my skills in both tech and business. I
+          now I&#39;m continuing to grow my skills in both tech and business. I
           started my second year of studies this year, and I’m really enjoying
           exploring different areas, especially within IT.{" "}
         </p>{" "}
         <p>
           {" "}
-          I'm really into everything technical and lately I've been getting more
-          interested in data analytics and Python. I've worked a lot with Excel
+          I&#39;m really into everything technical and lately I&#39;ve been getting more
+          interested in data analytics and Python. I&#39;ve worked a lot with Excel
           and SQL, and I’m excited to keep learning more about databases and
           cybersecurity too.{" "}
         </p>{" "}

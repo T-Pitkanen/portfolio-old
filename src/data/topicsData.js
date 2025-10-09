@@ -164,33 +164,76 @@ const topics = [
         title: "What is Blockchain?",
         excerpt: "An overview of blockchain technology.",
         content: [
-          { type: "header", text: "Blockchain Basics" },
           {
             type: "paragraph",
-            text: "A blockchain is a distributed ledger with growing lists of records (blocks) that are securely linked together via cryptographic hashes.[1][2][3][4] Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally represented as a Merkle tree, where data nodes are represented by leaves). Since each block contains information about the previous block, they effectively form a chain (compare linked list data structure), with each additional block linking to the ones before it. Consequently, blockchain transactions are resistant to alteration because, once recorded, the data in any given block cannot be changed retroactively without altering all subsequent blocks and obtaining network consensus to accept these changes.",
-          },
-          {
-            type: "paragraph",
-            text: "Blockchain technology has the potential to disrupt various industries by enabling secure and transparent transactions without the need for intermediaries.",
+            text: "Blockchain is a digital system for recording information in a secure, transparent and tamper-proof way. It functions as a decentralized ledger where data, known as transactions, is stored in blocks that are linked together in chronological order. Once data is added to the chain, it becomes extremely difficult to alter, making blockchain one of the most secure data storage methods available today.",
           },
           {
             type: "image",
-            src: "/topics/blockchain/blockchain.png",
-            alt: "Blockchain overview",
-            caption: "Illustration of how blockchain works",
+            src: "/topics/blockchain/what-is-blockchain.png",
+            alt: "What is blockchain illustration",
+            caption:
+              "Blockchain visualized as a digital ledger of connected blocks",
+          },
+          { type: "header", text: "How Blockchain Works" },
+          {
+            type: "paragraph",
+            text: "A blockchain consists of blocks that store information such as transactions, timestamps and unique digital fingerprints called hashes. Each block is connected to the previous one through these hashes, forming a continuous chain. Because every block depends on the one before it, changing one block would require altering the entire chain — something nearly impossible without network-wide agreement.",
           },
           {
-            type: "header", text: "Key Features" },
+            type: "paragraph",
+            text: "Instead of being managed by a single server or authority, blockchain data is distributed across a network of computers known as nodes. Each node holds a full copy of the blockchain and participates in verifying new transactions through consensus algorithms like Proof of Work or Proof of Stake.",
+          },
+          {
+            type: "image",
+            src: "/topics/blockchain/how-it-works.png",
+            alt: "Blockchain structure diagram",
+            caption:
+              "Illustration of how blocks are linked together in a chain",
+          },
+          { type: "header", text: "Key Features" },
           {
             type: "paragraph",
-            text: "1. Decentralization: Instead of being controlled by one central authority (like a bank or company), blockchain runs on a network of computers (nodes). Each node has a copy of the data, making the system more transparent and harder to manipulate.",
-          }, {
+            text: "Decentralization: Instead of relying on a central authority, blockchain operates on a peer-to-peer network of nodes. This makes the system more resilient, transparent, and less prone to corruption.",
+          },
+          {
             type: "paragraph",
-            text: "2. Immutability: Once data is recorded in a block and added to the chain, it cannot be changed or deleted. This ensures the integrity of the data and makes it tamper-proof.",
-          }, {
+            text: "Immutability: Once data is recorded in a block and confirmed by the network, it cannot be changed or deleted. This ensures the integrity and trustworthiness of all information on the chain.",
+          },
+          {
             type: "paragraph",
-            text: "3. Transparency: All transactions on a public blockchain are visible to anyone with access to the network. This transparency helps build trust among participants.",
-          }
+            text: "Transparency: Public blockchains allow anyone to view transactions, making the entire system open and verifiable.",
+          },
+          {
+            type: "paragraph",
+            text: "Security: Blockchain uses cryptographic algorithms to protect data and verify identities. Every transaction is digitally signed, making unauthorized changes nearly impossible.",
+          },
+          { type: "header", text: "Real-World Applications" },
+          {
+            type: "paragraph",
+            text: "While blockchain was originally created for Bitcoin, its use cases now extend far beyond cryptocurrency. It is transforming industries such as finance, logistics, healthcare, and digital identity management by improving transparency, efficiency, and security.",
+          },
+          {
+            type: "paragraph",
+            text: "Examples include supply chain tracking, secure digital voting systems, NFT marketplaces and smart contracts that execute automatically once certain conditions are met.",
+          },
+          {
+            type: "image",
+            src: "/topics/blockchain/applications.png",
+            alt: "Blockchain applications across industries",
+            caption:
+              "How blockchain is applied in finance, logistics, and digital art",
+          },
+          { type: "header", text: "Challenges" },
+          {
+            type: "paragraph",
+            text: "Despite its advantages, blockchain faces challenges such as high energy consumption, limited scalability and uncertain regulations in some countries. Developers and researchers are continuously working on improving its efficiency and accessibility.",
+          },
+
+          {
+            type: "paragraph",
+            text: "Blockchain is much more than just the technology behind cryptocurrencies. It’s a revolutionary system that enables secure, transparent and decentralized data management. As industries continue to adopt it, blockchain is shaping the foundation for a more trustworthy and digital future.",
+          },
         ],
       },
       {
@@ -198,16 +241,67 @@ const topics = [
         title: "Peer-to-Peer Networks",
         excerpt: "Decentralized networks where nodes share resources directly.",
         content: [
-          { type: "header", text: "Peer-to-Peer Networks Overview" },
+          { type: "header", text: "What Are Peer-to-Peer Networks?" },
           {
             type: "paragraph",
-            text: "Peer-to-peer networks allow nodes to communicate and share resources directly without a central server.",
+            text: "A peer-to-peer (P2P) network is a computer network where each connected device, or 'peer', can both provide and request services directly from other peers. Unlike traditional client–server models, there’s no central authority managing the network. Instead, every peer communicates independently, creating a decentralized and self-sustaining system.",
           },
           {
             type: "image",
-            src: "/topics/blockchain/peer-to-peer-networks.png",
-            alt: "Peer-to-Peer Networks",
-            caption: "Example of a peer-to-peer network",
+            src: "/topics/p2p/peer-to-peer.png",
+            alt: "Peer-to-peer network diagram",
+            caption:
+              "Devices connected directly to each other in a peer-to-peer structure",
+          },
+          { type: "header", text: "How P2P Networks Work" },
+          {
+            type: "paragraph",
+            text: "In a P2P network, all devices share resources such as files, bandwidth, or processing power. When a file is requested, it doesn’t come from one single source. It’s downloaded in small pieces from several peers at once. This makes the network faster, more reliable, and less dependent on any one machine staying online.",
+          },
+          {
+            type: "paragraph",
+            text: "Because of its decentralized design, a peer-to-peer network doesn’t have a single point of failure. Even if some devices disconnect, others can continue to share and transfer data. This principle of shared responsibility is what makes P2P systems so resilient.",
+          },
+          {
+            type: "image",
+            src: "/topics/p2p/how-it-works.png",
+            alt: "Illustration of data sharing between peers",
+            caption: "Peers sharing data directly without a central server",
+          },
+          { type: "header", text: "Key Features" },
+          {
+            type: "paragraph",
+            text: "One of the main strengths of peer-to-peer networking is decentralization. There’s no main server in charge — every participant is equally important. This structure helps prevent bottlenecks, reduces costs, and increases independence from centralized providers.",
+          },
+          {
+            type: "paragraph",
+            text: "P2P networks are also known for their scalability. As more users join, the network actually becomes stronger and more capable, because each new peer adds resources and connection points. This is very different from centralized systems, which can slow down as more people connect.",
+          },
+          {
+            type: "paragraph",
+            text: "Another defining feature is fault tolerance. Data is distributed across multiple devices, so even if one or several peers go offline, the system continues to function normally. This makes P2P networks reliable for sharing and storing data in unstable or large-scale environments.",
+          },
+          { type: "header", text: "Common Uses" },
+          {
+            type: "paragraph",
+            text: "Peer-to-peer technology powers many services we use today. File sharing platforms like BitTorrent rely on it to distribute large files efficiently. Communication tools such as Skype originally used P2P connections to handle voice and video calls. The same idea is also used in blockchain networks, where peers verify transactions without any central authority.",
+          },
+          {
+            type: "image",
+            src: "/topics/p2p/applications.png",
+            alt: "Examples of peer-to-peer applications",
+            caption:
+              "Modern uses of P2P networking, from file sharing to blockchain systems",
+          },
+          { type: "header", text: "Advantages and Challenges" },
+          {
+            type: "paragraph",
+            text: "The biggest advantages of peer-to-peer networks are their efficiency, cost-effectiveness, and independence from centralized control. However, they also bring challenges such as security concerns, inconsistent data availability, and difficulties in monitoring shared content. Despite these issues, P2P systems continue to evolve and are now the foundation of many decentralized technologies.",
+          },
+          { type: "header", text: "Conclusion" },
+          {
+            type: "paragraph",
+            text: "Peer-to-peer networks have completely changed how data and resources are shared online. By letting users connect directly, P2P systems promote openness, cooperation, and reliability. This same principle of decentralization has also inspired newer innovations like blockchain and Web3, showing how powerful the idea of peer-to-peer communication truly is.",
           },
         ],
       },
@@ -217,16 +311,75 @@ const topics = [
         excerpt:
           "Techniques for ensuring data integrity and agreement in a distributed system.",
         content: [
-          { type: "header", text: "Hashing and Consensus Overview" },
+          { type: "header", text: "Hashing and Consensus in Blockchain" },
           {
             type: "paragraph",
-            text: "Hashing is used to ensure data integrity, while consensus algorithms enable agreement among distributed nodes.",
+            text: "Two of the most important concepts behind blockchain technology are hashing and consensus. Together, they make sure that every transaction in a blockchain is secure, verified, and agreed upon by everyone in the network. Without these two mechanisms, the idea of a decentralized and trustworthy digital ledger wouldn’t be possible.",
           },
           {
             type: "image",
-            src: "/topics/blockchain/hashing-and-consensus.png",
-            alt: "Hashing and Consensus",
-            caption: "Example of hashing and consensus mechanisms",
+            src: "/topics/blockchain/hashing-consensus.png",
+            alt: "Hashing and consensus overview",
+            caption:
+              "Hashing and consensus work together to keep blockchain data secure and consistent",
+          },
+          { type: "header", text: "Understanding Hashing" },
+          {
+            type: "paragraph",
+            text: "Hashing is a process that takes an input, like a transaction or document, and turns it into a fixed-length code called a hash. This hash looks completely different from the original data but is always unique to it. Even a tiny change in the input — like changing a single letter — will produce a totally different hash. This makes hashing extremely useful for verifying data integrity.",
+          },
+          {
+            type: "paragraph",
+            text: "In a blockchain, each block contains the hash of the previous one, forming a secure chain. Because of this link, if someone tried to change any information inside a block, it would immediately alter that block’s hash and break the entire chain. This is why it’s nearly impossible to tamper with data stored on a blockchain.",
+          },
+          {
+            type: "image",
+            src: "/topics/blockchain/hashing-example.png",
+            alt: "Example of hash linking between blocks",
+            caption:
+              "Each block references the hash of the previous one, ensuring immutability",
+          },
+          { type: "header", text: "What Is Consensus?" },
+          {
+            type: "paragraph",
+            text: "Consensus is how all participants in a blockchain network agree on which transactions are valid. Since there’s no central authority, the network relies on consensus mechanisms — rules that help every node reach a shared decision about what should be added to the blockchain.",
+          },
+          {
+            type: "paragraph",
+            text: "The two most common methods are Proof of Work (PoW) and Proof of Stake (PoS). Proof of Work, used by Bitcoin, requires computers (called miners) to solve complex puzzles to confirm transactions. Proof of Stake, used by newer blockchains like Ethereum 2.0, selects validators based on how much cryptocurrency they commit as collateral. Both systems ensure that all participants play by the same rules and that only verified data gets added to the chain.",
+          },
+          {
+            type: "image",
+            src: "/topics/blockchain/consensus.png",
+            alt: "Consensus in blockchain network",
+            caption:
+              "Nodes in the network validate transactions and agree on the correct version of the blockchain",
+          },
+          { type: "header", text: "How Hashing and Consensus Work Together" },
+          {
+            type: "paragraph",
+            text: "Hashing and consensus complement each other to create trust in a system that has no central control. Hashing ensures that the data itself cannot be changed without detection, while consensus ensures that everyone in the network agrees on what data is correct. Even if someone tried to alter a transaction, the changed hash would be immediately rejected by the consensus process.",
+          },
+          {
+            type: "paragraph",
+            text: "In simple terms, hashing keeps the blockchain secure, and consensus keeps it fair. Together, they form the foundation of how decentralized systems maintain honesty, transparency, and reliability across thousands of independent participants.",
+          },
+          { type: "header", text: "Real-World Example" },
+          {
+            type: "paragraph",
+            text: "Imagine sending cryptocurrency to a friend. Your transaction is first hashed — turned into a digital fingerprint — and then shared across the blockchain network. The network’s nodes use consensus rules to check that your transaction is valid and that you actually have enough funds. Once the majority agrees, your transaction is added to a new block and permanently stored. The hash ensures it can’t be changed later, and the consensus guarantees everyone accepts it as true.",
+          },
+          {
+            type: "image",
+            src: "/topics/blockchain/hashing-and-consensus-example.png",
+            alt: "Hashing and consensus example in blockchain transaction",
+            caption:
+              "Hashing secures the transaction, while consensus ensures network-wide agreement",
+          },
+          { type: "header", text: "Conclusion" },
+          {
+            type: "paragraph",
+            text: "Hashing and consensus are the two main forces that keep blockchains secure and decentralized. Hashing protects the integrity of data, while consensus guarantees that all network participants agree on what’s valid. Together, they make blockchain a trustworthy and tamper-proof system — one that’s reshaping how we exchange information and value online.",
           },
         ],
       },

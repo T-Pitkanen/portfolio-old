@@ -170,7 +170,7 @@ const topics = [
           },
           {
             type: "image",
-            src: "/topics/blockchain/what-is-blockchain.png",
+            src: "/topics/blockchain/blockchain.png",
             alt: "What is blockchain illustration",
             caption:
               "Blockchain visualized as a digital ledger of connected blocks",

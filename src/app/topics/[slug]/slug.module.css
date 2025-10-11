@@ -1,6 +1,4 @@
 
-
-/* Container for a single topic page */
 .topicContainer {
   border-top: 1px solid #d6d6d6;
   padding: 1rem 3rem;
@@ -9,7 +7,6 @@
   color: rgb(221, 221, 221);
 }
 
-/* Back link */
 .back {
   display: inline-block;
   margin-bottom: 1rem;
@@ -17,7 +14,6 @@
   font-weight: 500;
 }
 
-/* Headings */
 .topicContainer h1 {
   margin: 0 0 1rem 0;
   font-size: 2rem;
@@ -82,7 +78,7 @@
   font-weight: 600;
 }
 
-/* Small screens */
+/* Small  */
 @media (max-width: 600px) {
   .topicContainer {
     padding: 1rem;
@@ -108,3 +104,5 @@
   display: flex;
   flex-direction: column;}
 }
+
+

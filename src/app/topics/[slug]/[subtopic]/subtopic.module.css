@@ -1,12 +1,11 @@
 .topicContainer {
   border-top: 1px solid #d6d6d6;
-  padding: 1rem 8rem;
+  padding: 1rem 3rem;
   max-width: 60%;
   margin: 5vh auto;
   color: rgb(221, 221, 221);
 }
 
-/* Back link */
 .back {
   display: inline-block;
   margin-bottom: 1rem;
@@ -14,7 +13,6 @@
   font-weight: 500;
 }
 
-/* Headings */
 .topicContainer h1 {
   margin: 0 0 1rem 0;
   font-size: 2rem;
@@ -31,11 +29,10 @@
 
 .topicContainer p {
   line-height: 1.6;
-  margin-bottom: 1rem;
-
+  margin-bottom: 2rem;
+  width: 80%;
 }
 
-/* Subtopics list (grid with equal-width cards) */
 .list {
   list-style: none;
   padding: 0;
@@ -45,7 +42,6 @@
   gap: 1rem;
   margin-top: 0.5rem;
 }
-
 
 .card h3 {
   margin: 0 0 0.5rem 0;
@@ -66,15 +62,12 @@
   font-weight: 600;
 }
 
-
-
 .figure img {
   max-width: 50%;
   height: auto;
 }
 
-
-/* Small screens */
+/* Small  */
 @media (max-width: 600px) {
   .topicContainer {
     padding: 1rem;
@@ -92,24 +85,35 @@
   }
 
   .list {
-  list-style: none;
-  margin-top: 2em;
-  padding: 0;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;}
+    list-style: none;
+    margin-top: 2em;
+    padding: 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-  .figure{
+  .figure {
     margin: 5vh 0;
   }
-  
-.figure img {
-  max-width: 100%;
-  height: auto;
+
+  .figure img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .figure figcaption {
+    font-size: 10px;
+  }
 }
 
-.figure figcaption {
-  font-size: 10px;
+@media (min-width: 1020px) and (max-width: 1900px) {
+  .topicContainer {
+    padding: 1rem 2rem;
+  }
 
-}
+  .topicContainer p{
+    width: 80%;
+    padding:  1rem 0;
+  }
 }

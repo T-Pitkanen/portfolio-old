@@ -9,29 +9,26 @@ const About = () => {
           {" "}
           Hey! I&#39;m Tiia — a Business Information Technology student at Vaasa
           University of Applied Sciences in Finland. I graduated from Media
-          College Denmark in April 2024 with a degree in Web Development, and
-          now I&#39;m continuing to grow my skills in both tech and business. I
-          started my second year of studies this year, and I’m really enjoying
-          exploring different areas, especially within IT.{" "}
+          College Denmark in April 2024 with a degree in Web Development. I
+          started my second year of studies this year and I&#39;m really enjoying it!{" "}
         </p>{" "}
         <p>
           {" "}
           I&#39;m really into everything technical and lately I&#39;ve been getting more
           interested in data analytics and Python. I&#39;ve worked a lot with Excel
-          and SQL, and I’m excited to keep learning more about databases and
+          and SQL and I’m excited to keep learning more about databases and
           cybersecurity too.{" "}
         </p>{" "}
         <p>
           {" "}
-          Alongside the technical side, my Business IT studies have also given
-          me experience in marketing, entrepreneurship, and other
-          business-related topics, which I think balance things out nicely.{" "}
+          My studies have also given
+          me experience in marketing, entrepreneurship and other
+          business-related topics. I think this knowledge is very useful and the combination of tech and business is valuable.{" "}
         </p>{" "}
         <p>
           {" "}
-          I’m comfortable with HTML and CSS, and I enjoy working with JavaScript
-          — especially React and Next.js. I’ve also used SCSS, Tailwind,
-          Node.js, and MongoDB in a few of my projects.{" "}
+          I’m comfortable with HTML and CSS and I enjoy working with JavaScript, especially React and Next.js. I’ve also used SCSS, Tailwind,
+          and MongoDB in a few of my projects.{" "}
         </p>{" "}
         <p>
           {" "}

@@ -3,6 +3,7 @@ import './globals.css';
 import Navigation from './components/navigation/navigation';
 import Link from 'next/link';
 import Footer from './components/footer/footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const raleway = Raleway({ subsets: ['latin'] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
 			<body className={raleway.className}>
 				<Navigation />
 				{children}
+				<SpeedInsights />
 				<Footer />
 			</body>
 		</html>

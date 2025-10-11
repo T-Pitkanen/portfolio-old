@@ -15,6 +15,7 @@ export default function TopicsPage({ limit }) {
         This space is where I post short articles and reflections on what I’m
         currently studying or experimenting with.
       </p>
+      <p>Currently still in progress. </p>
       <ul className={styles.list}>
         {display.map((t) => (
           <li key={t.slug} className={styles.card}>

@@ -111,6 +111,7 @@ const Projects = () => {
               justifyContent: "center",
               alignItems: "center",
               zIndex: 10000,
+              objectFit: "cover",
             },
           }}
         >

@@ -13,7 +13,6 @@ export async function generateStaticParams() {
 function RenderBlock({ block }) {
   if (!block) return null;
 
-  // plain string -> paragraph (only render non-empty)
   if (typeof block === "string") {
     const text = block.trim();
     if (!text) return null;
@@ -22,45 +21,63 @@ function RenderBlock({ block }) {
 
   const type = block.type;
 
-  // header (only if text exists)
   if (type === "header") {
     const txt = block.text?.trim();
     if (!txt) return null;
     return <h2 className={styles.blockHeader}>{txt}</h2>;
   }
 
-  // paragraph (only if text exists)
   if (type === "paragraph") {
     const txt = block.text?.trim();
     if (!txt) return null;
     return <p className={styles.blockParagraph}>{txt}</p>;
   }
 
-  // image (only render when src exists)
+    if (type === "list") {
+    const items = Array.isArray(block.items) ? block.items.filter(Boolean) : [];
+    if (items.length === 0) return null;
+    return (
+      <ul className={styles.listBlock}>
+        {items.map((it, i) => (
+          <li key={i} className={styles.listItem}>
+            {typeof it === "string" ? it : String(it)}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   if (type === "image") {
     if (!block.src) return null;
+    const sizeClass = block.size ? `figure--${block.size}` : "figure--medium";
+    const cls = `figure ${sizeClass}`;
     return (
-      <figure className={styles.figure}>
+      <figure className={cls}>
         <Image
           src={block.src}
           alt={block.alt || ""}
-          width={1200}
+          width={1500}
           height={800}
+          style={{ width: "100%", height: "auto" }}
           className={styles.blockImage}
         />
-        {block.caption && <figcaption className={styles.caption}>{block.caption}</figcaption>}
+        {block.caption && (
+          <figcaption className={styles.caption}>{block.caption}</figcaption>
+        )}
       </figure>
     );
   }
 
-  // section (only render when children array has at least one renderable block)
   if (type === "section") {
     const children = Array.isArray(block.children) ? block.children : [];
     const hasRenderable = children.some((c) => {
       if (!c) return false;
       if (typeof c === "string") return !!c.trim();
       if (c.type === "image") return !!c.src;
-      return !!(c.text && String(c.text).trim()) || (Array.isArray(c.children) && c.children.length);
+      return (
+        !!(c.text && String(c.text).trim()) ||
+        (Array.isArray(c.children) && c.children.length)
+      );
     });
     if (!hasRenderable) return null;
 
@@ -86,14 +103,18 @@ export default function SubtopicPage({ params }) {
   return (
     <main className={styles.topicContainer}>
       <nav style={{ marginBottom: 30 }}>
-        <Link href="/topics" className={styles.link}>All topics</Link>{" "}
-        › <Link href={`/topics/${topic.slug}`} className={styles.link}>{topic.title}</Link>{" "}
+        <Link href="/topics" className={styles.link}>
+          All topics
+        </Link>{" "}
+        ›{" "}
+        <Link href={`/topics/${topic.slug}`} className={styles.link}>
+          {topic.title}
+        </Link>{" "}
         › <span aria-current="page">{item.title}</span>
       </nav>
 
       <h1 className={styles.title}>{item.title}</h1>
 
-      {/* render block content (supports objects and plain strings) */}
       {Array.isArray(item.content) &&
         item.content.map((block, i) => <RenderBlock key={i} block={block} />)}
     </main>

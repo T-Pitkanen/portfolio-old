@@ -12,31 +12,63 @@ const topics = [
         title: "Kanban",
         excerpt: "Visual workflow management using a board and WIP limits.",
         content: [
-          { type: "header", text: "What is Kanban?" },
+          { type: "header", text: "What Kanban is?" },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "Kanban is a system for visualizing work so you can see what needs to be done, what’s in progress, and what’s finished. It helps teams (or individuals) manage tasks better, avoid overload, and continuously improve their process.",
+          },
+          { type: "header", text: "And how does it work?" },
+          {
+            type: "paragraph",
+            text: "A Kanban board is usually divided into columns that represent different stages of work, such as:",
+          },
+          {
+            type: "list",
+            items: [
+              "To Do",
+              "In Progress",
+              "Done",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "Each task or project is represented by a card that moves across the columns as work progresses. You can use physical boards (sticky notes on a wall) or digital tools like Trello, Jira, Notion, or Asana."
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/agile/kanban/kanban1.png",
+            alt: "a kanban board example",
+            caption: "Kanban board example",
+            size: "medium"
           },
           {
-            type: "section",
-            title: "",
-            children: [
-             
-            ],
+            type: "header",
+            text: "Own example project of a Kanban board",
           },
+          {
+            type: "paragraph",
+            text: "I had a task to create a simple Kanban board for Netflix or a similar streaming platform.",
+          },
+          {
+            type: "image",
+            src: "/topics/agile/kanban/kanban_own.jpg",
+            alt: "a kanban board example project",
+            caption: "Kanban board example for a streaming platform",
+            size: "large"
+          },{
+             type: "image",
+            src: "/topics/agile/kanban/own.png",
+            alt: "a kanban board example project",
+            caption: "Own small presentation of a kanban board",
+            size: "large"
+
+          }
         ],
       },
       {
         slug: "scrum",
         title: "Scrum",
-        excerpt:
-          "",
+        excerpt: "",
         content: [
           { type: "header", text: "Scrum basics" },
           {
@@ -59,7 +91,7 @@ const topics = [
           { type: "header", text: "" },
           {
             type: "paragraph",
-           text: "In progress...",
+            text: "In progress...",
           },
           {
             type: "image",
@@ -161,11 +193,11 @@ const topics = [
         title: "What is Blockchain?",
         excerpt: "An overview of blockchain technology.",
         content: [
-          { type: "header",  text:  "In progress...", },
+          { type: "header", text: "In progress..." },
 
           {
             type: "paragraph",
-           
+
             text: "Blockchain is a digital system for recording information in a secure, transparent and tamper-proof way. It functions as a decentralized ledger where data, known as transactions, is stored in blocks that are linked together in chronological order. Once data is added to the chain, it becomes extremely difficult to alter, making blockchain one of the most secure data storage methods available today.",
           },
           {
@@ -188,8 +220,7 @@ const topics = [
             type: "image",
             src: "",
             alt: "",
-            caption:
-              "",
+            caption: "",
           },
           { type: "header", text: "Key Features" },
           {
@@ -217,7 +248,7 @@ const topics = [
             type: "paragraph",
             text: "Examples include supply chain tracking, secure digital voting systems, NFT marketplaces and smart contracts that execute automatically once certain conditions are met.",
           },
-        
+
           { type: "header", text: "Challenges" },
           {
             type: "paragraph",
@@ -239,7 +270,7 @@ const topics = [
           {
             type: "paragraph",
             text: "In progress...",
-            },
+          },
         ],
       },
       {
@@ -253,8 +284,7 @@ const topics = [
             type: "paragraph",
             text: "In progress...",
           },
-  
-        ]
+        ],
       },
       {
         slug: "smart-contracts",
@@ -267,7 +297,6 @@ const topics = [
             type: "paragraph",
             text: "In progress...",
           },
-       
         ],
       },
       {
@@ -281,7 +310,6 @@ const topics = [
             type: "paragraph",
             text: "In progress...",
           },
-       
         ],
       },
       {
@@ -295,7 +323,6 @@ const topics = [
             type: "paragraph",
             text: "In progress...",
           },
-        
         ],
       },
       {
@@ -312,7 +339,6 @@ const topics = [
             type: "paragraph",
             text: "In progress...",
           },
-        
         ],
       },
       {
@@ -342,7 +368,7 @@ const topics = [
           { type: "header", text: "" },
           {
             type: "paragraph",
-            text:  "In progress...",
+            text: "In progress...",
           },
           {
             type: "image",
@@ -370,7 +396,7 @@ const topics = [
           { type: "header", text: "What is AI?" },
           {
             type: "paragraph",
-             text:  "In progress...",
+            text: "In progress...",
           },
           {
             type: "image",

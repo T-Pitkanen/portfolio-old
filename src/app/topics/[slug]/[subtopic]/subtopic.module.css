@@ -1,9 +1,16 @@
+
+
+
+
+
+
+
 .topicContainer {
   border-top: 1px solid #d6d6d6;
   padding: 1rem 3rem;
   max-width: 60%;
   margin: 5vh auto;
-  color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221);;
 }
 
 .back {
@@ -29,7 +36,7 @@
 
 .topicContainer p {
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin: 3vh 0;
   width: 80%;
 }
 
@@ -53,6 +60,7 @@
   margin: 0;
   color: #555;
   font-size: 0.95rem;
+  
 }
 
 .link {
@@ -62,10 +70,23 @@
   font-weight: 600;
 }
 
-.figure img {
-  max-width: 50%;
-  height: auto;
+.caption {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.25rem;
 }
+
+.listBlock {
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+.listItem {
+  margin: 0.35rem 0;
+  color: #ddd;
+  line-height: 1.5;
+}
+
 
 /* Small  */
 @media (max-width: 600px) {

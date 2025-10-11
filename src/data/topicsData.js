@@ -60,7 +60,7 @@ const topics = [
             src: "/topics/agile/kanban/own.png",
             alt: "a kanban board example project",
             caption: "Own small presentation of a kanban board",
-            size: "large"
+            size: "scale-down large"
 
           }
         ],

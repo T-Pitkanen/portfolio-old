@@ -56,8 +56,8 @@ function RenderBlock({ block }) {
         <Image
           src={block.src}
           alt={block.alt || ""}
-          width={1500}
-          height={800}
+          width={850}
+          height={500}
           style={{ width: "100%", height: "auto" }}
           className={styles.blockImage}
         />

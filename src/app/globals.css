@@ -18,6 +18,12 @@
   width: 100%;
 }
 
+.figure--scale-down img {
+  max-width: 500px;
+  height: auto;
+  object-fit: scale-down;
+}
+
 .figure--small,
 .figure--medium,
 .figure--large {
@@ -27,9 +33,7 @@
 .figure--small img,
 .figure--medium img,
 .figure--large img {
-  width: 100%;
-  height: auto;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 
 html,

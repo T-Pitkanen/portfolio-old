@@ -27,7 +27,7 @@ const About = () => {
         </p>{" "}
         <p>
           {" "}
-          I’m comfortable with HTML and CSS and I enjoy working with JavaScript, especially React and Next.js. I’ve also used SCSS, Tailwind,
+          I’m comfortable with HTML and CSS and I enjoy working with JavaScript, especially React and Next.js. I’ve also used SCSS, Tailwind
           and MongoDB in a few of my projects.{" "}
         </p>{" "}
         <p>

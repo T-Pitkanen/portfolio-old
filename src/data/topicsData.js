@@ -60,7 +60,7 @@ const topics = [
             src: "/topics/agile/kanban/own.png",
             alt: "a kanban board example project",
             caption: "Own small presentation of a kanban board",
-            size: "scale-down large"
+            size: "large"
 
           }
         ],
@@ -68,7 +68,7 @@ const topics = [
       {
         slug: "scrum",
         title: "Scrum",
-        excerpt: "",
+        excerpt: "Agile framework for managing complex projects with defined roles.",
         content: [
           { type: "header", text: "Scrum basics" },
           {

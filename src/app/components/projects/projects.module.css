@@ -152,6 +152,9 @@
 
 
 @media (max-width: 1025px) {
+
+ 
+
   .container {
     width: 80%;
   }
@@ -196,8 +199,8 @@
     width: 80vw;
   }
 
-  .infoContainer {
-    width: 80%;
+   .infoContainer{
+    width: 100%;
   }
 
   .projectInfo p {

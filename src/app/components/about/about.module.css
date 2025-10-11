@@ -60,7 +60,7 @@
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 1025px) {
   .container {
     width: 95%;
     padding-top: 2.5rem;
@@ -70,6 +70,10 @@
   .aboutText h2 {
     font-size: 20px;
     text-underline-offset: 6px;
+  }
+
+  .aboutText{
+    width: 80%;
   }
 
   .aboutText p {

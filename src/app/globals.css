@@ -18,11 +18,11 @@
   width: 100%;
 }
 
-.figure--scale-down img {
-  max-width: 500px;
+/* .figure--scale-down img {
+  max-width: 400px;
   height: auto;
-  object-fit: scale-down;
-}
+   object-fit: scale-down; 
+} */
 
 .figure--small,
 .figure--medium,

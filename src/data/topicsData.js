@@ -24,22 +24,18 @@ const topics = [
           },
           {
             type: "list",
-            items: [
-              "To Do",
-              "In Progress",
-              "Done",
-            ],
+            items: ["To Do", "In Progress", "Done"],
           },
           {
             type: "paragraph",
-            text: "Each task or project is represented by a card that moves across the columns as work progresses. You can use physical boards (sticky notes on a wall) or digital tools like Trello, Jira, Notion, or Asana."
+            text: "Each task or project is represented by a card that moves across the columns as work progresses. You can use physical boards (sticky notes on a wall) or digital tools like Trello, Jira, Notion, or Asana.",
           },
           {
             type: "image",
             src: "/topics/agile/kanban/kanban1.png",
             alt: "a kanban board example",
             caption: "Kanban board example",
-            size: "medium"
+            size: "medium",
           },
           {
             type: "header",
@@ -54,35 +50,100 @@ const topics = [
             src: "/topics/agile/kanban/kanban_own.jpg",
             alt: "a kanban board example project",
             caption: "Kanban board example for a streaming platform",
-            size: "large"
-          },{
-             type: "image",
+            size: "large",
+          },
+          {
+            type: "image",
             src: "/topics/agile/kanban/own.png",
             alt: "a kanban board example project",
             caption: "Own small presentation of a kanban board",
-            size: "large"
-
-          }
+            size: "large",
+          },
         ],
       },
       {
         slug: "scrum",
         title: "Scrum",
-        excerpt: "Agile framework for managing complex projects with defined roles.",
+        excerpt:
+          "An Agile framework focused on teamwork, flexibility, and delivering work in short cycles.",
         content: [
-          { type: "header", text: "Scrum basics" },
+          { type: "header", text: "What Scrum is?" },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "Scrum is a framework for managing projects, especially in software development, that focuses on teamwork, flexibility, and delivering work in small, manageable pieces. It’s part of the Agile family of methods and helps teams plan, build, test, and improve continuously.",
+          },
+          { type: "header", text: "How does it work?" },
+          {
+            type: "paragraph",
+            text: "Scrum organizes work into short cycles called sprints, usually lasting 1–4 weeks. At the end of each sprint, the team delivers a working product or update, reviews what went well, and plans the next sprint.",
+          },
+          { type: "header", text: "Key Roles" },
+          {
+            type: "list",
+            items: [
+              "Product Owner – decides what needs to be built and sets priorities.",
+              "Scrum Master – ensures the team follows Scrum principles and removes obstacles.",
+              "Development Team – designs, codes, tests, and delivers the product.",
+            ],
+          },
+          { type: "header", text: "Key Events" },
+          {
+            type: "list",
+            items: [
+              "Sprint Planning – the team decides what to do in the next sprint.",
+              "Daily Scrum (Stand-up) – a short daily meeting to discuss progress and problems.",
+              "Sprint Review – the team presents what they completed.",
+              "Sprint Retrospective – the team reflects on how to improve next time.",
+            ],
+          },
+          { type: "header", text: "Scrum Artifacts" },
+          {
+            type: "list",
+            items: [
+              "Product Backlog – a list of all features or ideas for the project.",
+              "Sprint Backlog – the tasks chosen for the current sprint.",
+              "Increment – the working product after each sprint.",
+            ],
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/agile/scrum/scrum.png",
+            alt: "a scrum workflow example",
+            caption: "Scrum workflow example",
+            size: "medium",
+          },
+          { type: "header", text: "My personal task" },
+          {
+            type: "paragraph",
+            text: "I had a task where I acted as the Product Owner for a software project that will become a digital flight logbook. The goal was to create a prioritized product backlog (for example in Excel).",
+          },
+          { type: "header", text: "Project description" },
+          {
+            type: "paragraph",
+            text: "The application is intended for private aircraft pilots as an electronic flight logbook. Users should be able to record and manage flight details such as date, aircraft, route, duration and comments. The UI can follow common logbook layouts or be a design of your own.",
+          },
+          {
+            type: "image",
+            src: "/topics/agile/scrum/backlog.png",
+            alt: "Backlog example for a flight logbook",
+            caption: "Backlog example for a flight logbook",
+            size: "full",
+          },
+          { type: "header", text: "Deliverable" },
+          {
+            type: "paragraph",
+            text: 'Create a prioritized product backlog listing roughly 10–15 features or requirements. An Excel file or a ready-made backlog template from the web can be used for presentation.',
+          },
+          {
+            type: "image",
+            src: "/topics/agile/scrum/sprint.png",
+            alt: "Sprint backlog example for a flight logbook",
+            caption: "Sprint backlog example for a flight logbook",
+            size: "full",
           },
         ],
       },
+
       {
         slug: "user-stories",
         title: "User Stories",

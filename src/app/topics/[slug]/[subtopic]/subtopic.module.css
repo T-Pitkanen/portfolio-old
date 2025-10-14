@@ -15,22 +15,27 @@
 }
 
 .topicContainer h1 {
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
+  margin: 4rem 0 1rem 0;
+  font-size: 2.2rem;
   font-weight: 600;
   color: white;
 }
 
 .topicContainer h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.topicContainer h3 {
+  margin-top: 3rem;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
 .topicContainer p {
-  line-height: 1.6;
-  margin: 3vh 0;
+  line-height: 1.7;
+  margin: 2vh 0;
   width: 80%;
 }
 

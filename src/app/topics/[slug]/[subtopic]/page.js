@@ -28,6 +28,14 @@ function RenderBlock({ block }) {
     return <h2 className={styles.blockHeader}>{txt}</h2>;
   }
 
+  if (type === "subheader") {
+    const txt = block.text?.trim();
+    if (!txt) return null;
+    return <h3 className={styles.blockSubheader}>{txt}</h3>;
+  }
+
+
+
   if (type === "paragraph") {
     const txt = block.text?.trim();
     if (!txt) return null;

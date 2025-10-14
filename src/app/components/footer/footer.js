@@ -1,5 +1,6 @@
 import styles from './footer.module.css';
 import { FaGithub, FaDownload } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer = () => {
 	return (
@@ -16,9 +17,11 @@ const Footer = () => {
                         <span className={styles.cvText}>Download my CV</span>
                     </a>
                 </div>
-				<div className={styles.footerIcon}>
-					<FaGithub className={styles.faIcon} />
-				</div>
+				<Link href="https://github.com/T-Pitkanen" target="_blank" rel="noopener noreferrer">
+					<div className={styles.footerIcon}>
+						<FaGithub className={styles.faIcon} />
+					</div>
+				</Link>
 				<div className={styles.footerEmail}>
 					<p>tiia1.pitkanen@gmail.com</p>
 				</div>

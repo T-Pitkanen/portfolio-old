@@ -147,7 +147,8 @@ const topics = [
       {
         slug: "software-requirements-specification",
         title: "Software Requirements Specification (SRS)",
-        excerpt: "Defining functional and non-functional requirements for software projects.",
+        excerpt:
+          "Defining functional and non-functional requirements for software projects.",
         content: [
           {
             type: "header",
@@ -342,25 +343,7 @@ const topics = [
             type: "paragraph",
             text: "A good user story describes a complete, user-centered feature that can be built, tested, and demonstrated within a sprint.",
           },
-          {
-            type: "header",
-            text: "Qualities of a Good User Story (INVEST Model)",
-          },
-          {
-            type: "list",
-            items: [
-              "Independent – can be developed separately from others.",
-              "Negotiable – not a fixed requirement but open for discussion.",
-              "Valuable – provides clear user or business value.",
-              "Estimable – effort can be reasonably estimated.",
-              "Small – fits within a single sprint.",
-              "Testable – can be verified through tests or clear acceptance criteria.",
-            ],
-          },
-          {
-            type: "paragraph",
-            text: "A good user story describes a complete, user-centered feature that can be built, tested, and demonstrated within a sprint.",
-          },
+        
           {
             type: "header",
             text: "Task: Pair Work – Designing a Mobile App and Product Backlog",
@@ -369,7 +352,7 @@ const topics = [
             type: "paragraph",
             text: "I had a paired task with a classmate where we worked together to design a mobile application. The assignment included writing a description of the application (explaining its purpose and target users), creating user stories, and forming an initial prioritized product backlog in Excel. ",
           },
-          { 
+          {
             type: "paragraph",
             text: "We also divided the application's features into versions — identifying which features would be included in the first release and which would be planned for later versions. Additionally, we considered potential technical innovations that could be used in the future and listed possible non-functional requirements, such as device performance or hardware needs.",
           },
@@ -377,36 +360,181 @@ const topics = [
             type: "image",
             src: "/topics/agile/software/kippo.png",
             alt: "Mobile app backlog example",
-            size:"full"
+            size: "full",
           },
-          { type: "image",
+          {
+            type: "image",
             src: "/topics/agile/software/kippo_2.png",
             alt: "Mobile app features example",
-            size:"full"
+            size: "full",
           },
-           { type: "image",
+          {
+            type: "image",
             src: "/topics/agile/software/käyttöliittymäsuunnittelu.png",
             alt: "Mobile app UI design example",
-            size:"full"
+            size: "full",
           },
         ],
       },
       {
-        slug: "use-cases",
-        title: "Use Cases",
-        excerpt: "Defining how users will interact with the system.",
+        slug: "use-case",
+        title: "Use Case",
+        excerpt: "Describing system interactions from a user's perspective.",
         content: [
-          { type: "header", text: "" },
+          {
+            type: "header",
+            text: "What is a Use Case Diagram?",
+          },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "A Use Case Diagram is a tool used in software engineering to visually describe how different users (called actors) interact with a system. It helps to identify the system’s functional requirements and to understand what actions users can perform. Instead of focusing on how the system is built, the diagram focuses on what the system does from the user's perspective.",
+          },
+          {
+            type: "header",
+            text: "Purpose and Description",
+          },
+          {
+            type: "paragraph",
+            text: "The main goal of a Use Case Diagram is to show the interactions between users and the system in a simple, understandable way. It works at a high level — no technical details are shown. Each use case represents a functionality or action that the system provides, such as 'Search product' or 'Make payment'.",
+          },
+          {
+            type: "paragraph",
+            text: "Each diagram is usually complemented with written descriptions that explain what happens in each use case step by step and what the expected results are. This combination of visual and written parts gives a full understanding of how the system should behave.",
+          },
+          {
+            type: "header",
+            text: "Main Elements of a Use Case Diagram",
+          },
+          {
+            type: "list",
+            items: [
+              "System – represented as a rectangle that defines what is included in the system’s scope.",
+              "Actors – the people, external systems, or devices that interact with the system.",
+              "Use cases – shown as ovals; they describe the functionalities or services provided by the system.",
+            ],
+          },
+          {
+            type: "header",
+            text: "My Banking System Example",
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/agile/usecase/käyttökaavio.jpg",
+            alt: "Banking system use case diagram showing user and bank interactions",
+            caption:
+              "Use case diagram of a banking system with authentication, account review, and transaction operations",
           },
+          {
+            type: "image",
+            src: "/topics/agile/usecase/vaatimukset_actorit_käyttötapaukset.jpg",
+            alt: "Detailed textual description of use case requirements, actors, and use cases",
+            caption:
+              "Detailed breakdown of requirements (Vaatimukset), actors (Actorit), and use cases (Käyttötapaukset)",
+            size: "medium",
+          },
+          {
+            type: "paragraph",
+            text: "In this diagram, I've modeled a simple banking system with two actors and several interconnected use cases. This example demonstrates how a typical ATM or banking application would handle user interactions.",
+          },
+          {
+            type: "subheader",
+            text: "Actors",
+          },
+          {
+            type: "paragraph",
+            text: "Käyttäjä (User): The primary actor who initiates banking operations. This represents a regular bank customer using the system to perform various transactions.",
+          },
+          {
+            type: "paragraph",
+            text: "Pankki/Järjestelmä (Bank/System): The secondary actor representing the banking system or ATM that responds to user actions and processes transactions.",
+          },
+          {
+            type: "subheader",
+            text: "Use Cases",
+          },
+          {
+            type: "paragraph",
+            text: "1. Tilin tarkastaminen (Account Review): This is the main entry point where users check their account information. It serves as the starting point for other operations and provides users with an overview of their account status.",
+          },
+          {
+            type: "paragraph",
+            text: "2. Tunnistautuminen (Authentication): Connected with an include relationship to Account Review, this is a mandatory step that must happen every time a user wants to review their account. The include relationship shows that authentication cannot be skipped and is essential for security.",
+          },
+          {
+            type: "paragraph",
+            text: "3. Rahan nosto (Cash Withdrawal): Also connected with an include relationship to Authentication. Users must authenticate before withdrawing money. This use case interacts with the Bank/System actor to process the transaction and dispense cash.",
+          },
+          {
+            type: "paragraph",
+            text: "4. Kuitin tulostus (Receipt Printing): Connected with an extend relationship to Cash Withdrawal. This is an optional feature where users can choose whether to print a receipt after withdrawing money. The extend relationship shows this is not mandatory.",
+          },
+          {
+            type: "paragraph",
+            text: "5. Rahan talletus (Cash Deposit): Another banking operation that interacts with the Bank/System. This allows users to deposit money into their accounts through the ATM.",
+          },
+          {
+            type: "header",
+            text: "Understanding Relationships",
+          },
+          {
+            type: "paragraph",
+            text: "Include (<<include>>): This indicates mandatory functionality that must always be executed. In my diagram, authentication must always occur when reviewing accounts or withdrawing money. You can think of it as a required step that is part of the main use case.",
+          },
+          {
+            type: "paragraph",
+            text: "Extend (<<extend>>): This indicates optional functionality that may or may not happen depending on certain conditions or user choices. Receipt printing is optional and only happens if the user chooses to do so. The base use case (Cash Withdrawal) can complete successfully without the extending use case.",
+          },
+          {
+            type: "header",
+            text: "Key Components of a Use Case Diagram",
+          },
+          {
+            type: "paragraph",
+            text: "System Boundary: The rectangle that contains all use cases represents the system boundary. It shows what is inside the system and what is outside (the actors).",
+          },
+          {
+            type: "paragraph",
+            text: "Associations: The lines connecting actors to use cases show which actors can initiate which use cases. Solid lines indicate direct interaction.",
+          },
+          {
+            type: "paragraph",
+            text: "Stereotypes: The <<include>> and <<extend>> labels are called stereotypes. They provide additional meaning to the relationships between use cases.",
+          },
+
+          {
+            type: "header",
+            text: "Relationships in a Use Case Diagram",
+          },
+          {
+            type: "paragraph",
+            text: "Use Case Diagrams can also display relationships between use cases and actors. These relationships show how different elements depend on or interact with each other.",
+          },
+          {
+            type: "list",
+            title: "Common relationships include:",
+            items: [
+              "Association – a line connecting an actor and a use case, showing interaction.",
+              "Include – shows that one use case always includes another use case (mandatory).",
+              "Extend – indicates optional or conditional behavior that extends a base use case.",
+              "Generalization – shows that one actor inherits the behavior of another, such as a 'Customer' and 'Guest' sharing similar actions.",
+            ],
+          },
+          {
+      type: "header",
+      text: "Practical Applications",
+    },
+    {
+      type: "paragraph",
+      text: "Use case diagrams are essential tools in software development and are particularly useful when planning a new application or system. They help teams understand user requirements before writing any code.",
+    },
+    {
+      type: "paragraph",
+      text: "These diagrams are valuable for communicating requirements to developers, allowing everyone to have a shared understanding of what the system should do. They're also useful for documenting existing system functionality and training new team members.",
+    },
+    {
+      type: "paragraph",
+      text: "In real-world projects, use case diagrams serve as a bridge between business requirements and technical implementation. They help ensure that the development team builds what the users actually need.",
+    },
         ],
       },
       {
@@ -416,25 +544,6 @@ const topics = [
           "Comparing iterative Agile with sequential Waterfall development.",
         content: [
           { type: "header", text: "Agile vs Waterfall Overview" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-          {
-            type: "image",
-            src: "",
-            alt: "",
-            caption: "",
-          },
-        ],
-      },
-      {
-        slug: "diagrams-and-models",
-        title: "Diagrams and Models",
-        excerpt:
-          "Visual representations to understand and communicate system design.",
-        content: [
-          { type: "header", text: "" },
           {
             type: "paragraph",
             text: "In progress...",

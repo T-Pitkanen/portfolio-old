@@ -1,0 +1,111 @@
+.toc {
+  width: 260px;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  align-self: flex-start;
+  z-index: 60;
+  
+}
+
+
+.toc .tocList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc.open .tocList {
+  display: block;
+}
+
+.toc.closed .tocList {
+  display: none;
+}
+
+.closed .tocList {
+  display: none;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.content .figure {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tocHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.35rem;
+}
+
+.tocList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tocList li {
+  margin: 1rem 0;
+}
+
+.level2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.level3 {
+  margin-left: 0.6rem;
+  font-size: 0.95em;
+  color: #cfcfcf;
+}
+
+.level3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .toc {
+    display: none;
+   
+  }
+
+  .toc.closed .tocList {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px ) and (max-width: 1900px) {
+  .toc {
+    width: 300px;
+  }
+
+  .tocList li {
+    margin: 0.9rem 0;
+  }
+}
+
+@media (min-width: 1025px ) {
+  .toc {
+    position: sticky;
+    top: 80px;
+    margin-top: -7rem; 
+  }
+
+}

@@ -1,10 +1,10 @@
 const topics = [
   {
-    slug: "agile-development",
-    title: "Agile Development",
-    excerpt: "Principles and frameworks for iterative software delivery.",
+    slug: "project-planning-and-documentation",
+    title: "Project Planning & Documentation",
+    excerpt: "Fundamentals of Agile methodologies and project documentation.",
     content: [
-      "Agile is an iterative approach to software development that values collaboration and responsiveness to change.",
+      "Project documentation and agile methodologies like Scrum and Kanban are essential for effective project management and team collaboration.",
     ],
     subtopics: [
       {
@@ -132,7 +132,7 @@ const topics = [
           { type: "header", text: "Deliverable" },
           {
             type: "paragraph",
-            text: 'Create a prioritized product backlog listing roughly 10–15 features or requirements. An Excel file or a ready-made backlog template from the web can be used for presentation.',
+            text: "Create a prioritized product backlog listing roughly 10–15 features or requirements. An Excel file or a ready-made backlog template from the web can be used for presentation.",
           },
           {
             type: "image",
@@ -145,20 +145,249 @@ const topics = [
       },
 
       {
-        slug: "user-stories",
-        title: "User Stories",
-        excerpt: "Capturing requirements from the user's perspective.",
+        slug: "software-requirements-specification",
+        title: "Software Requirements Specification (SRS)",
+        excerpt: "Defining functional and non-functional requirements for software projects.",
         content: [
-          { type: "header", text: "" },
+          {
+            type: "header",
+            text: "What is it?",
+          },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "Software engineering involves multiple activities, each focusing on different aspects of development. These include requirements specification, design, implementation, testing, and maintenance. The requirement specification phase determines how the software should function and serves as the foundation for all later stages.",
+          },
+          {
+            type: "header",
+            text: "The Role of Requirements Specification",
+          },
+          {
+            type: "paragraph",
+            text: "The central challenge in software development is defining customer requirements. Requirements are divided into functional and non-functional categories. Functional requirements describe what the system does, while non-functional requirements define quality attributes and environmental constraints such as usability, security, or performance.",
+          },
+          {
+            type: "header",
+            text: "Phases of Requirements Specification",
+          },
+          {
+            type: "list",
+            items: [
+              "Requirements elicitation",
+              "Requirements analysis",
+              "Requirements validation",
+              "Requirements documentation",
+              "Requirements management",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "These phases are often iterative — requirements are gathered, analyzed, and refined in cycles until they are complete and well-documented.",
+          },
+          {
+            type: "header",
+            text: "Requirements Elicitation Methods",
+          },
+          {
+            type: "paragraph",
+            text: "Elicitation begins by identifying stakeholders — individuals or groups directly or indirectly involved with the system. After identifying them, developers use interviews, brainstorming sessions, and prototype reviews to uncover requirements. In some cases, observation methods like ethnography are used to understand user workflows.",
+          },
+          {
+            type: "list",
+            items: [
+              "Interviewing stakeholders",
+              "Brainstorming sessions",
+              "Creating prototypes or wireframes",
+              "Observing user behavior (ethnography)",
+              "Analyzing existing workflows or systems",
+            ],
+          },
+          {
+            type: "header",
+            text: "Analysis, Documentation, and Validation",
+          },
+          {
+            type: "paragraph",
+            text: "Once gathered, requirements must be analyzed for completeness, consistency, and feasibility. They are then documented in a form that developers and testers can use. Validation ensures the documented requirements truly match the customer’s needs. Requirement management tracks changes that occur during development.",
+          },
+          {
+            type: "header",
+            text: "Functional Requirements",
+          },
+          {
+            type: "paragraph",
+            text: "Functional requirements describe system behavior — what the user can do and what the software must perform. Examples include:",
+          },
+          {
+            type: "list",
+            items: [
+              "A customer can register for an account.",
+              "A registered user can add products to a shopping cart.",
+              "A user receives an email confirmation after payment.",
+              "An admin can add new products to the catalog.",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "Functional requirements are often represented as feature lists, UML use cases, or in agile contexts, user stories.",
+          },
+          {
+            type: "header",
+            text: "Non-Functional Requirements",
+          },
+          {
+            type: "paragraph",
+            text: "Non-functional requirements cover quality attributes and environmental constraints that affect the system as a whole.",
+          },
+          {
+            type: "list",
+            items: [
+              "Usability – how easy and intuitive the system is to use.",
+              "Security – who has access and how data is protected.",
+              "Performance – how quickly the system responds.",
+              "Scalability – ability to handle growing user or data loads.",
+              "Stability – system recovery from errors.",
+              "Extensibility and testability – ease of expanding or verifying the system.",
+            ],
+          },
+          {
+            type: "header",
+            text: "Constraints and Environment",
+          },
+          {
+            type: "list",
+            items: [
+              "Implementation technologies – programming languages, frameworks, or databases used.",
+              "Operating environment – browser-based, desktop, or mobile application.",
+              "Integration – connections to other systems or APIs.",
+              "Compliance – adherence to laws or standards such as GDPR.",
+            ],
+          },
+          {
+            type: "header",
+            text: "Modern Requirements Specification: Lean Startup Approach",
+          },
+          {
+            type: "paragraph",
+            text: "The Lean Startup method (Eric Ries, 2011) introduced a rapid learning approach through the build–measure–learn cycle. It is especially useful when user needs are uncertain, such as in startups or innovative products.",
+          },
+          {
+            type: "list",
+            items: [
+              "Build – develop a minimum viable product (MVP).",
+              "Measure – observe how users interact with it.",
+              "Learn – analyze results and adjust based on feedback.",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "An MVP is a simplified version of the product built quickly to collect feedback from real users. Based on the data, the team can decide to improve, pivot, or discard the idea.",
+          },
+          {
+            type: "header",
+            text: "Requirements in Agile Development",
+          },
+          {
+            type: "paragraph",
+            text: "Agile methods like Scrum and XP use lightweight, iterative approaches to manage requirements. The most common tool is the User Story.",
+          },
+          {
+            type: "header",
+            text: "User Story",
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/agile/software/userstory.png",
+            alt: "example of a user story",
+            caption: "Example of a user story",
+            size: "large",
+          },
+          {
+            type: "paragraph",
+            text: "A user story describes a functionality valuable to a user or customer. It includes a short written description, ongoing conversation for clarification, and acceptance tests to confirm completion.",
+          },
+          {
+            type: "example",
+            text: 'Example: "As a student, I want to purchase a parking pass so that I can drive to school."',
+          },
+          {
+            type: "header",
+            text: "Acceptance Criteria Example",
+          },
+          {
+            type: "list",
+            items: [
+              "Buyer must be an enrolled student.",
+              "Parking pass is valid for one month.",
+              "Only one pass can be purchased per month.",
+              "Payment is made via cash or online banking using a personal reference number.",
+            ],
+          },
+          {
+            type: "header",
+            text: "Qualities of a Good User Story (INVEST Model)",
+          },
+
+          {
+            type: "list",
+            items: [
+              "Independent – can be developed separately from others.",
+              "Negotiable – not a fixed requirement but open for discussion.",
+              "Valuable – provides clear user or business value.",
+              "Estimable – effort can be reasonably estimated.",
+              "Small – fits within a single sprint.",
+              "Testable – can be verified through tests or clear acceptance criteria.",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "A good user story describes a complete, user-centered feature that can be built, tested, and demonstrated within a sprint.",
+          },
+          {
+            type: "header",
+            text: "Qualities of a Good User Story (INVEST Model)",
+          },
+          {
+            type: "list",
+            items: [
+              "Independent – can be developed separately from others.",
+              "Negotiable – not a fixed requirement but open for discussion.",
+              "Valuable – provides clear user or business value.",
+              "Estimable – effort can be reasonably estimated.",
+              "Small – fits within a single sprint.",
+              "Testable – can be verified through tests or clear acceptance criteria.",
+            ],
+          },
+          {
+            type: "paragraph",
+            text: "A good user story describes a complete, user-centered feature that can be built, tested, and demonstrated within a sprint.",
+          },
+          {
+            type: "header",
+            text: "Task: Pair Work – Designing a Mobile App and Product Backlog",
+          },
+          {
+            type: "paragraph",
+            text: "I had a paired task with a classmate where we worked together to design a mobile application. The assignment included writing a description of the application (explaining its purpose and target users), creating user stories, and forming an initial prioritized product backlog in Excel. ",
+          },
+          { 
+            type: "paragraph",
+            text: "We also divided the application's features into versions — identifying which features would be included in the first release and which would be planned for later versions. Additionally, we considered potential technical innovations that could be used in the future and listed possible non-functional requirements, such as device performance or hardware needs.",
+          },
+          {
+            type: "image",
+            src: "/topics/agile/software/kippo.png",
+            alt: "Mobile app backlog example",
+            size:"full"
+          },
+          { type: "image",
+            src: "/topics/agile/software/kippo_2.png",
+            alt: "Mobile app features example",
+            size:"full"
+          },
+           { type: "image",
+            src: "/topics/agile/software/käyttöliittymäsuunnittelu.png",
+            alt: "Mobile app UI design example",
+            size:"full"
           },
         ],
       },

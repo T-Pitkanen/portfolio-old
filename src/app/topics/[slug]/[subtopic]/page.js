@@ -3,6 +3,7 @@ import Image from "next/image";
 import topics from "@/data/topicsData";
 import styles from "./subtopic.module.css";
 import { notFound } from "next/navigation";
+import TableOfContents from "@/app/components/toc/toc";
 
 export async function generateStaticParams() {
   return topics.flatMap((t) =>
@@ -33,7 +34,7 @@ function RenderBlock({ block }) {
     return <p className={styles.blockParagraph}>{txt}</p>;
   }
 
-    if (type === "list") {
+  if (type === "list") {
     const items = Array.isArray(block.items) ? block.items.filter(Boolean) : [];
     if (items.length === 0) return null;
     return (
@@ -115,8 +116,19 @@ export default function SubtopicPage({ params }) {
 
       <h1 className={styles.title}>{item.title}</h1>
 
-      {Array.isArray(item.content) &&
-        item.content.map((block, i) => <RenderBlock key={i} block={block} />)}
+      <div className={styles.topicInner}>
+        <article
+          id="article-content"
+          className={styles.content}
+          data-article-content
+        >
+          {Array.isArray(item.content) &&
+            item.content.map((block, i) => (
+              <RenderBlock key={i} block={block} />
+            ))}
+        </article>
+        <TableOfContents />
+      </div>
     </main>
   );
 }

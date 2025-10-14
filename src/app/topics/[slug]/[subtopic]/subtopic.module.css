@@ -1,10 +1,10 @@
-
 .topicContainer {
   border-top: 1px solid #d6d6d6;
   padding: 1rem 3rem;
   max-width: 60%;
   margin: 5vh auto;
-  color: rgb(221, 221, 221);;
+  color: rgb(221, 221, 221);
+ 
 }
 
 .back {
@@ -34,6 +34,36 @@
   width: 80%;
 }
 
+/* TOC */
+.topicInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.topicContainer,
+.topicInner {
+  overflow: visible;
+  transform: none;
+  will-change: auto;
+}
+
+.topicContainer {
+  border-top: 1px solid #d6d6d6;
+  padding: 1rem 3rem;
+  max-width: min(1200px, 90%);
+  margin: 1vh auto;
+  color: rgb(221, 221, 221);
+}
+
+.content {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -54,7 +84,6 @@
   margin: 0;
   color: #555;
   font-size: 0.95rem;
-  
 }
 
 .link {
@@ -81,7 +110,6 @@
   line-height: 1.5;
 }
 
-
 /* Small  */
 @media (max-width: 600px) {
   .topicContainer {
@@ -99,9 +127,9 @@
     padding: 1rem 2rem;
   }
 
-  .topicContainer p{
+  .topicContainer p {
     width: 100%;
-    padding:  1rem 0;
+    padding: 1rem 0;
   }
 
   .list {
@@ -128,12 +156,14 @@
 }
 
 @media (min-width: 1020px) and (max-width: 1900px) {
+
+  
   .topicContainer {
     padding: 1rem 2rem;
   }
 
-  .topicContainer p{
+  .topicContainer p {
     width: 80%;
-    padding:  1rem 0;
+    padding: 1rem 0;
   }
 }

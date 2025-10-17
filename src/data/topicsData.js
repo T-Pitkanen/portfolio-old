@@ -556,13 +556,13 @@ const topics = [
         ],
       },
       {
-        slug: "continuous-integration-and-deployment",
-        title: "Continuous Integration and Deployment",
-        excerpt: "Automating code integration, testing and deployment.",
+        slug: "charts-and-diagrams",
+        title: "Charts and Diagrams",
+        excerpt: "Visual tools for process representation and decision making.",
         content: [
           {
             type: "header",
-            text: "",
+            text: "What is a Flowchart?",
           },
           {
             type: "paragraph",

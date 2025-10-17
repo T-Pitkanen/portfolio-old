@@ -780,11 +780,11 @@ const topics = [
         ],
       },
       {
-        slug: "peer-to-peer-networks",
-        title: "Peer-to-Peer Networks",
-        excerpt: "Decentralized networks where nodes share resources directly.",
+        slug: "consensus-mechanisms",
+        title: "Consensus Mechanisms",
+        excerpt: "Methods for achieving agreement in distributed systems.",
         content: [
-          { type: "header", text: "What Are Peer-to-Peer Networks?" },
+          { type: "header", text: "What is Consensus in Blockchain?" },
           {
             type: "paragraph",
             text: "In progress...",
@@ -792,12 +792,12 @@ const topics = [
         ],
       },
       {
-        slug: "hashing-and-consensus",
-        title: "Hashing and Consensus",
+        slug: "network-structure",
+        title: "Network Structure",
         excerpt:
-          "Techniques for ensuring data integrity and agreement in a distributed system.",
+          "How blockchain networks are organized and maintained.",
         content: [
-          { type: "header", text: "Hashing and Consensus in Blockchain" },
+          { type: "header", text: "Network Topology" },
           {
             type: "paragraph",
             text: "In progress...",
@@ -805,12 +805,12 @@ const topics = [
         ],
       },
       {
-        slug: "smart-contracts",
-        title: "Smart Contracts",
+        slug: "cryptography",
+        title: "Cryptography",
         excerpt:
-          "Self-executing contracts with the terms directly written into code.",
+          "Techniques for ensuring data integrity and confidentiality.",
         content: [
-          { type: "header", text: "Smart Contracts Overview" },
+          { type: "header", text: "Cryptography Overview" },
           {
             type: "paragraph",
             text: "In progress...",
@@ -818,86 +818,21 @@ const topics = [
         ],
       },
       {
-        slug: "cryptocurrencies",
-        title: "Cryptocurrencies",
+        slug: "blockchain-applications",
+        title: "Blockchain Applications: Smart Contracts and Cryptowallets",
         excerpt:
-          "Digital or virtual currencies that use cryptography for security.",
+          "Exploring real-world uses of blockchain technology.",
         content: [
-          { type: "header", text: "Cryptocurrencies Overview" },
+          { type: "header", text: "Blockchain Applications Overview" },
           {
             type: "paragraph",
             text: "In progress...",
-          },
-        ],
-      },
-      {
-        slug: "keys-and-wallets",
-        title: "Keys and Wallets",
-        excerpt:
-          "Understanding public/private keys and cryptocurrency wallets.",
-        content: [
-          { type: "header", text: "Keys and Wallets Overview" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-        ],
-      },
-      {
-        slug: "symmetric-vs-asymmetric-encryption",
-        title: "Symmetric vs Asymmetric Encryption",
-        excerpt:
-          "Differences between symmetric and asymmetric encryption methods.",
-        content: [
-          {
-            type: "header",
-            text: "Symmetric vs Asymmetric Encryption Overview",
-          },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-        ],
-      },
-      {
-        slug: "signatures-and-certificates",
-        title: "Signatures and Certificates",
-        excerpt:
-          "Digital signatures and certificates for authentication and integrity.",
-        content: [
-          { type: "header", text: "Signatures and Certificates Overview" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-          {
-            type: "image",
-            src: "",
-            alt: "",
-            caption: "",
-          },
-        ],
-      },
-      {
-        slug: "pos_and_pow",
-        title: "Proof of Stake vs Proof of Work",
-        excerpt: "Consensus mechanisms used in blockchain networks.",
-        content: [
-          { type: "header", text: "" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-          {
-            type: "image",
-            src: "",
-            alt: "",
-            caption: "",
           },
         ],
       },
     ],
   },
+  //--------------------------------------------- Artificial Intelligence 
   {
     slug: "artificial-intelligence",
     title: "Artificial Intelligence",
@@ -961,34 +896,11 @@ const topics = [
         ],
       },
       {
-        slug: "robotics",
-        title: "Robotics",
-        excerpt: "AI in the design and operation of robots.",
-        content: [
-          { type: "header", text: "What is Robotics?" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-          {
-            type: "image",
-            src: "",
-            alt: "",
-            caption: "",
-          },
-          {
-            type: "section",
-            title: "",
-            children: [],
-          },
-        ],
-      },
-      {
         slug: "natural-language-processing",
         title: "Natural Language Processing",
         excerpt: "AI's ability to understand and generate human language.",
         content: [
-          { type: "header", text: "" },
+          { type: "header", text: "Natural Language Processing Overview" },
           {
             type: "paragraph",
             text: "In progress...",

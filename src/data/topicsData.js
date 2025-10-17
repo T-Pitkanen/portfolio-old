@@ -343,7 +343,6 @@ const topics = [
             type: "paragraph",
             text: "A good user story describes a complete, user-centered feature that can be built, tested, and demonstrated within a sprint.",
           },
-        
           {
             type: "header",
             text: "Task: Pair Work – Designing a Mobile App and Product Backlog",
@@ -520,21 +519,21 @@ const topics = [
             ],
           },
           {
-      type: "header",
-      text: "Practical Applications",
-    },
-    {
-      type: "paragraph",
-      text: "Use case diagrams are essential tools in software development and are particularly useful when planning a new application or system. They help teams understand user requirements before writing any code.",
-    },
-    {
-      type: "paragraph",
-      text: "These diagrams are valuable for communicating requirements to developers, allowing everyone to have a shared understanding of what the system should do. They're also useful for documenting existing system functionality and training new team members.",
-    },
-    {
-      type: "paragraph",
-      text: "In real-world projects, use case diagrams serve as a bridge between business requirements and technical implementation. They help ensure that the development team builds what the users actually need.",
-    },
+            type: "header",
+            text: "Practical Applications",
+          },
+          {
+            type: "paragraph",
+            text: "Use case diagrams are essential tools in software development and are particularly useful when planning a new application or system. They help teams understand user requirements before writing any code.",
+          },
+          {
+            type: "paragraph",
+            text: "These diagrams are valuable for communicating requirements to developers, allowing everyone to have a shared understanding of what the system should do. They're also useful for documenting existing system functionality and training new team members.",
+          },
+          {
+            type: "paragraph",
+            text: "In real-world projects, use case diagrams serve as a bridge between business requirements and technical implementation. They help ensure that the development team builds what the users actually need.",
+          },
         ],
       },
       {

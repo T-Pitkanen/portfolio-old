@@ -566,13 +566,105 @@ const topics = [
           },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "A flowchart is a visual diagram that represents a process, system, or algorithm using standardized symbols and arrows. It shows the sequence of steps and decisions in a clear, easy-to-understand format. Flowcharts are used across many fields - from software development to business processes to everyday problem-solving.",
+          },
+          {
+            type: "header",
+            text: "Basic Flowchart Symbols",
+          },
+          {
+            type: "paragraph",
+            text: "Oval (Terminal): Represents the start or end of a process. Every flowchart begins and ends with this symbol.",
+          },
+          {
+            type: "paragraph",
+            text: "Rectangle (Process): Represents an action or process step. This is where work actually happens, like 'Calculate total' or 'Send email'.",
+          },
+          {
+            type: "paragraph",
+            text: "Diamond (Decision): Represents a decision point where the flow can branch based on yes/no or true/false conditions. For example, 'Is password correct?'",
+          },
+          {
+            type: "paragraph",
+            text: "Parallelogram (Input/Output): Represents data input or output operations, like 'Enter username' or 'Display result'.",
+          },
+          {
+            type: "paragraph",
+            text: "Arrows (Flow Lines): Show the direction of flow from one step to the next. They connect all symbols and guide the reader through the process.",
+          },
+          {
+            type: "header",
+            text: "Why Use Flowcharts?",
+          },
+          {
+            type: "paragraph",
+            text: "Flowcharts make complex processes easier to understand. Instead of reading lengthy descriptions, you can see the entire process at a glance. They're especially useful for identifying bottlenecks, redundant steps, or potential problems in a process.",
+          },
+          {
+            type: "paragraph",
+            text: "In software development, flowcharts help programmers plan their code before writing it. They can visualize the logic flow, identify edge cases, and ensure all possible scenarios are handled. This planning step often saves time by catching logical errors early.",
+          },
+          {
+            type: "paragraph",
+            text: "Flowcharts are also excellent communication tools. They provide a common visual language that both technical and non-technical people can understand. Team members can discuss processes using the flowchart as a reference, ensuring everyone has the same understanding.",
+          },
+          {
+            type: "header",
+            text: "Creating Effective Flowcharts",
+          },
+          {
+            type: "paragraph",
+            text: "Good flowcharts are simple and clear. Start at the top and flow downward or from left to right - this is the natural reading direction. Avoid crossing lines when possible, as they make the diagram harder to follow.",
+          },
+          {
+            type: "paragraph",
+            text: "Use consistent symbols throughout your flowchart. Each symbol type should always represent the same kind of step. Keep text inside symbols brief but descriptive - use action verbs for process steps like 'Verify password' rather than vague labels like 'Check'.",
+          },
+          {
+            type: "paragraph",
+            text: "Label decision branches clearly. Each path from a diamond should be marked with the condition (Yes/No, True/False, or specific values). This ensures anyone reading the flowchart knows which path to follow based on the decision outcome.",
+          },
+          {
+            type: "header",
+            text: "My Flowchart Example: Number Guessing Game",
+          },
+          {
+            type: "paragraph",
+            text: "To practice creating flowcharts, I mapped out a simple number guessing game written in C#. This exercise helped me understand how code logic translates into visual flow diagrams.",
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/agile/diagrams/example.png",
+            alt: "C# code for a number guessing game",
+            caption: "The original C# code for the number guessing game",
+            size: "large",
+          },
+          {
+            type: "image",
+            src: "/topics/agile/diagrams/2.jpg",
+            alt: "Flowchart representation of the number guessing game",
+            caption: "Flowchart visualization of the game logic",
+            size: "scale-down",
+          },
+          {
+            type: "paragraph",
+            text: "The flowchart shows how the program generates a random number, then loops through player guesses. Decision diamonds compare each guess to the secret number, branching to 'too low' or 'too high' messages, or ending with a congratulations when correct. The loop structure is clearly visible as the flow returns back to the guess input after each incorrect attempt.",
+          },
+          {
+            type: "header",
+            text: "Common Applications",
+          },
+          {
+            type: "paragraph",
+            text: "In programming, flowcharts are used to design algorithms before coding. They help visualize loops, conditional statements, and function calls. Many programmers sketch flowcharts when working on complex logic.",
+          },
+          {
+            type: "paragraph",
+            text: "Businesses use flowcharts to document and improve processes like customer service workflows, manufacturing procedures, or approval processes. They help identify inefficiencies and standardize operations across teams.",
+          },
+          {
+            type: "paragraph",
+            text: "In problem-solving and troubleshooting, flowcharts guide users through systematic diagnostic processes. Technical support often uses flowcharts to help diagnose and fix common problems.",
           },
         ],
       },
@@ -613,7 +705,7 @@ const topics = [
             type: "image",
             src: "/topics/blockchain/blockchain.png",
             alt: "Structure of a blockchain block showing data, hash, and previous block's hash",
-            caption: "Structure of a blockchain block"
+            caption: "Structure of a blockchain block",
           },
           {
             type: "paragraph",
@@ -671,7 +763,7 @@ const topics = [
             type: "image",
             src: "/topics/blockchain/farm.png",
             alt: "Illustration of Bitcoin mining process with miners solving puzzles to add blocks",
-            caption: "Bitcoin mining farm"
+            caption: "Bitcoin mining farm",
           },
           {
             type: "paragraph",
@@ -775,8 +867,6 @@ const topics = [
             type: "paragraph",
             text: "This immutability creates trust in a trustless system. You don't need to trust a bank, government, or company to maintain accurate records. Instead, you trust the mathematics and the distributed network of computers. The blockchain's transparent nature means anyone can verify the entire history of transactions, yet it's secure enough that no single entity can manipulate it.",
           },
-        
-          
         ],
       },
       {
@@ -794,8 +884,7 @@ const topics = [
       {
         slug: "network-structure",
         title: "Network Structure",
-        excerpt:
-          "How blockchain networks are organized and maintained.",
+        excerpt: "How blockchain networks are organized and maintained.",
         content: [
           { type: "header", text: "Network Topology" },
           {
@@ -807,8 +896,7 @@ const topics = [
       {
         slug: "cryptography",
         title: "Cryptography",
-        excerpt:
-          "Techniques for ensuring data integrity and confidentiality.",
+        excerpt: "Techniques for ensuring data integrity and confidentiality.",
         content: [
           { type: "header", text: "Cryptography Overview" },
           {
@@ -820,8 +908,7 @@ const topics = [
       {
         slug: "blockchain-applications",
         title: "Blockchain Applications: Smart Contracts and Cryptowallets",
-        excerpt:
-          "Exploring real-world uses of blockchain technology.",
+        excerpt: "Exploring real-world uses of blockchain technology.",
         content: [
           { type: "header", text: "Blockchain Applications Overview" },
           {
@@ -832,7 +919,7 @@ const topics = [
       },
     ],
   },
-  //--------------------------------------------- Artificial Intelligence 
+  //--------------------------------------------- Artificial Intelligence
   {
     slug: "artificial-intelligence",
     title: "Artificial Intelligence",

@@ -21,17 +21,17 @@
   color: white;
 }
 
-.topicContainer h2 {
+.blockHeader {
   margin-top: 3rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-.topicContainer h3 {
+/* .topicContainer h3 {
   margin-top: 3rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
-}
+} */
 
 .topicContainer p {
   line-height: 1.7;
@@ -113,6 +113,13 @@
   margin: 0.35rem 0;
   color: #ddd;
   line-height: 1.5;
+}
+
+.blockSubheader {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 /* Small  */

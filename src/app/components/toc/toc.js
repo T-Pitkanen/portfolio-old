@@ -28,7 +28,7 @@ export default function Toc() {
 
   function scanAndSet(articleEl) {
     if (!articleEl) return [];
-    const nodes = Array.from(articleEl.querySelectorAll("h1, h2, h3, h4")).filter(
+    const nodes = Array.from(articleEl.querySelectorAll("h1, h2")).filter(
       (n) => (n.textContent || "").trim()
     );
     if (nodes.length === 0) return [];

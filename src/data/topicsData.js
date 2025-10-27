@@ -931,57 +931,327 @@ const topics = [
       {
         slug: "what-is-ai",
         title: "What is AI?",
-        excerpt: "Definition and key concepts of artificial intelligence.",
+        excerpt:
+          "A deep look into artificial intelligence, its examples, key concepts, and related fields.",
         content: [
-          { type: "header", text: "What is AI?" },
+          { type: "header", text: "Artificial Intelligence (AI)" },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "Artificial Intelligence, or AI, refers to computer systems that can perform tasks requiring human-like intelligence — such as perception, reasoning, learning, and decision-making. Its meaning varies: for some, AI represents futuristic thinking machines; for others, it’s simply advanced data processing. AI is not a single technology but a broad field of research and application inside computer science.",
+          },
+
+          { type: "header", text: "Examples of AI in Use" },
+          {
+            type: "paragraph",
+            text: "AI can be found in many modern applications that shape our everyday lives. Three key examples are self-driving cars, recommendation systems, and image or video processing.",
+          },
+
+          { type: "subheader", text: "Self-driving Cars" },
+          {
+            type: "paragraph",
+            text: "Self-driving cars combine several AI techniques, including route planning, computer vision, and real-time decision-making. Their goal is to improve road safety and traffic efficiency. Similar technologies are used in drones, delivery robots, and autonomous ships.",
+          },
+
+          { type: "subheader", text: "Recommendation Systems" },
+          {
+            type: "paragraph",
+            text: "Recommendation algorithms personalize what each user sees in platforms like Netflix, Spotify, and Google. While this improves user experience, it also brings challenges such as filter bubbles, fake news, and the manipulation of public opinion.",
+          },
+
+          { type: "subheader", text: "Image and Video Processing" },
+          {
+            type: "paragraph",
+            text: "AI-powered image and video systems can recognize faces, tag people in photos, and detect objects. They are used in security, photography, and self-driving vehicles. However, AI can also generate highly realistic fake media, known as deepfakes, raising concerns about authenticity and trust.",
+          },
+
+          { type: "header", text: "Why Defining AI Is Difficult" },
+          {
+            type: "paragraph",
+            text: "AI is challenging to define for several reasons. First, there is no single universal definition — the field constantly evolves. Once a task becomes common, it often stops being seen as AI. Second, science fiction has influenced how people imagine AI, creating unrealistic expectations. Finally, tasks that seem easy for humans, like grasping an object, are extremely difficult for machines, while tasks that appear complex to us, like playing chess, are relatively simple for computers.",
+          },
+
+          { type: "header", text: "Core Qualities of AI" },
+          {
+            type: "paragraph",
+            text: "Two essential characteristics define AI systems: autonomy and adaptivity. Autonomy means the ability to act independently in complex environments, while adaptivity refers to improving performance through experience and learning. Although we often describe AI using human-like words such as 'thinking' or 'understanding', these are only metaphors — AI does not truly understand as humans do.",
+          },
+
+          { type: "header", text: "Misleading Language in AI" },
+          {
+            type: "paragraph",
+            text: "Many AI-related words, like intelligence, learning, and understanding, are what Marvin Minsky called 'suitcase words' — they carry multiple meanings and can easily mislead. AI is narrow, not general, meaning it is built for specific tasks. It’s not useful to compare different AIs by 'intelligence level'; a chess program is not smarter than a spam filter, they are simply skilled in different areas. A clearer way to describe AI is to say that a system uses AI methods rather than calling it an AI itself.",
+          },
+
+          { type: "header", text: "AI as a Field of Study" },
+          {
+            type: "paragraph",
+            text: "AI should be seen as a scientific discipline, not a countable thing. We wouldn’t say 'one AI, two AIs' any more than we’d say 'one biology, two biologies'. Instead, AI represents a set of methods, concepts, and subfields within computer science, similar to mathematics or physics.",
+          },
+
+          { type: "header", text: "Related Fields and Subtopics" },
+          {
+            type: "paragraph",
+            text: "To understand AI fully, it’s important to know its related fields — machine learning, deep learning, data science, and robotics — which all contribute to how AI works in practice.",
+          },
+
+          { type: "subheader", text: "Machine Learning (ML)" },
+          {
+            type: "paragraph",
+            text: "Machine learning is a subfield of AI that enables systems to become adaptive and improve through data. It can be defined as systems that enhance their performance in a specific task as they gain experience or data.",
+          },
+
+          { type: "subheader", text: "Deep Learning" },
+          {
+            type: "paragraph",
+            text: "Deep learning is a subfield of machine learning that uses complex, layered neural networks. The term 'deep' refers to the number and complexity of layers in the model. With modern computing power, deep learning has achieved remarkable progress in image recognition, speech processing, and natural language understanding.",
+          },
+
+          { type: "subheader", text: "Data Science" },
+          {
+            type: "paragraph",
+            text: "Data science is an interdisciplinary field that combines machine learning, statistics, algorithms, and data management. It applies AI techniques to real-world problems in areas like business, biology, and technology. Data scientists need both technical and domain-specific knowledge, and most data science projects involve at least a small touch of AI.",
+          },
+
+          { type: "subheader", text: "Robotics" },
+          {
+            type: "paragraph",
+            text: "Robotics focuses on building and programming machines that operate in the real world. It integrates nearly all AI areas, including computer vision, speech recognition, natural language processing, and affective computing — systems that can interpret or mimic emotions. Machine learning plays a key role in enabling robots to adapt and improve.",
           },
           {
+            type: "paragraph",
+            text: "A robot is a device equipped with sensors for observation, actuators for performing actions, and programmable logic to execute various tasks. Robots don’t need to look human — a dishwasher or a self-driving car can be considered a robot, but a chatbot is not a physical robot.",
+          },
+
+          { type: "header", text: "Key Takeaways" },
+          {
+            type: "paragraph",
+            text: "Artificial intelligence is a broad and constantly evolving field that brings together many technologies under one concept. It is not a single invention or tool but rather a set of methods that allow systems to act autonomously and adapt to new information. Understanding related fields like machine learning, deep learning, data science, and robotics helps to see how AI functions in practice.",
+          },
+          {
+            type: "paragraph",
+            text: "AI should be viewed more as a capability than as an independent entity. Instead of thinking about a single AI, we should think about how AI principles are used in various systems to solve specific problems. The words often used to describe AI, like 'intelligence' or 'understanding', can be misleading since computers don’t process meaning the same way humans do. Despite that, AI’s influence on daily life is already massive — shaping transportation, media, and research — and will continue to grow as technology advances and new applications emerge.",
+          },
+        ],
+      },
+
+      {
+        slug: "philosophy-of-ai",
+        title: "The Philosophy of Artificial Intelligence",
+        excerpt:
+          "Exploring the philosophical questions behind intelligence, consciousness, and AI's true nature.",
+        content: [
+          { type: "header", text: "The Philosophy of Artificial Intelligence" },
+          {
+            type: "paragraph",
+            text: "Artificial intelligence inevitably raises deep philosophical questions. It invites us to wonder whether intelligent behavior requires the presence of a mind, and to what extent consciousness can be created computationally. These questions connect computer science with philosophy, psychology, and even the study of human thought itself.",
+          },
+
+          { type: "header", text: "The Turing Test" },
+          {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/ai/turing.png",
+            alt: "Illustration of the Turing Test with a human, a computer",
+            caption: "Alan Turing and The Turing Machine",
+          },
+          {
+            type: "paragraph",
+            text: "Alan Turing (1912–1954), an English mathematician and logician often called the father of computer science, was fascinated by the nature of intelligence and thinking — and by whether these could be simulated by machines. His most famous contribution to AI philosophy is the Turing Test, originally known as the imitation game.",
+          },
+          {
+            type: "paragraph",
+            text: "In the test, a human interviewer communicates with two participants by exchanging written messages, much like a chat conversation. One participant is a human, and the other is a computer. If the interviewer cannot reliably tell which one is which, the machine is said to have passed the test — suggesting that its behavior is indistinguishable from human intelligence. Turing’s idea can be summarized as: 'Something is intelligent if it appears intelligent.' In other words, if we cannot distinguish a machine’s behavior from that of a human, then we may call it intelligent — at least in a behavioral sense.",
+          },
+
+          { type: "header", text: "Does Acting Human Mean Being Intelligent?" },
+          {
+            type: "paragraph",
+            text: "One of the main criticisms of the Turing Test is that it may measure humanness rather than true intelligence. Several chatbot programs have 'passed' the test by imitating human quirks — avoiding questions, making grammar mistakes, or joking nonsensically — rather than showing real understanding.",
+          },
+          {
+            type: "paragraph",
+            text: "A famous case is Eugene Goostman, a chatbot that pretended to be a 13-year-old Ukrainian boy. His responses were full of humor, distractions, and deliberate confusion, which made ten out of thirty judges believe he was human. This example shows how easily we can mistake conversational style for intelligence, especially when randomness or personality is added to machine responses.",
+          },
+
+          { type: "header", text: "The Chinese Room Argument" },
+          {
+            type: "image",
+            src: "/topics/ai/searle.png",
+            alt: "Illustration of the Chinese Room Argument",
+            caption: "John Searle and The Chinese Room Argument",
+          },
+          {
+            type: "paragraph",
+            text: "Philosopher John Searle challenged the idea that intelligent behavior automatically implies real understanding. He proposed the Chinese Room thought experiment: imagine a person who doesn’t understand Chinese, locked in a room with a huge rulebook that explains exactly how to respond to Chinese sentences slipped under the door. By following the rules, the person can produce correct responses — convincing outsiders that they 'know' Chinese — even though they understand nothing of the language.",
+          },
+          {
+            type: "paragraph",
+            text: "Searle’s point is that a computer program can simulate intelligence without actually understanding anything. It manipulates symbols mechanically but has no awareness or comprehension. Therefore, even if a machine passes the Turing Test, it doesn’t necessarily mean it possesses real intelligence or consciousness — only that it behaves as if it did.",
+          },
+
+          { type: "header", text: "Is a Self-Driving Car Intelligent?" },
+          {
+            type: "paragraph",
+            text: "The Chinese Room argument highlights the difference between performing intelligently and being intelligent. A self-driving car, for instance, can steer, detect obstacles, and make real-time decisions — but does it understand what it’s doing? The car doesn’t 'see' or 'know' in the human sense; it processes data based on rules and probabilities. This example reinforces Searle’s view that AI’s behavior can look intelligent without involving genuine thought or awareness.",
+          },
+
+          { type: "header", text: "How Important Is Philosophy in Practice?" },
+          {
+            type: "image",
+            src: "/topics/ai/mccarthy.png",
+            alt: "Illustration of John McCarthy",
+            caption: "John McCarthy",
+          },
+          {
+            type: "paragraph",
+            text: "Questions about the nature of mind, consciousness, and intelligence are fascinating but difficult to answer. Philosophers, scientists, and authors have debated them for decades, often without reaching clear conclusions. However, as computer scientist John McCarthy once noted, 'The philosophy of AI has about as much influence on AI practice as the philosophy of science has on scientific practice.' In other words, while philosophical discussions are intellectually enriching, practical AI development focuses more on solving real-world problems than on defining what 'true intelligence' means.",
+          },
+
+          { type: "header", text: "General vs. Narrow AI" },
+          {
+            type: "paragraph",
+            text: "You may have heard the terms general AI (AGI) and narrow AI. Narrow AI refers to systems that are designed to perform one specific task — like recognizing faces, recommending music, or driving a car. General AI, on the other hand, would be capable of solving any intellectual problem that a human can. All existing AI today is narrow AI; true AGI remains a concept of science fiction. Researchers largely stopped pursuing AGI directly after decades of little progress, while narrow AI continues to advance rapidly and produce practical results.",
+          },
+
+          { type: "header", text: "Strong vs. Weak AI" },
+          {
+            type: "paragraph",
+            text: "A similar distinction exists between strong AI and weak AI. Strong AI would mean creating a machine that genuinely has a mind — one that is conscious and self-aware. Weak AI, in contrast, refers to the systems we already have: programs that can perform intelligent tasks but lack true understanding or consciousness. In this sense, all current AI — no matter how impressive — is weak AI. It can act intelligently but does not think in the human sense.",
+          },
+
+          {
+            type: "paragraph",
+            text: "Artificial intelligence philosophy explores profound questions about the nature of intelligence, consciousness, and the human mind. Thought experiments like the Turing Test and the Chinese Room shed light on what it means to 'think,' while also revealing the limits of machine understanding. Machines can simulate intelligence and even mimic human behavior, but genuine understanding — at least for now — remains uniquely human.",
+          },
+        ],
+      },
+
+      {
+        slug: "solving-problems-with-ai",
+        title: "Solving Problems with Artificial Intelligence",
+        excerpt:
+          "A historical overview of how AI emerged through logic, search, and early problem-solving research.",
+        content: [
+          {
+            type: "header",
+            text: "Solving Problems with Artificial Intelligence",
+          },
+          {
+            type: "paragraph",
+            text: "Artificial intelligence is almost as old as computer science itself. Long before the first actual computers existed, people were already fascinated by the idea of automated reasoning and machine intelligence. One of the key figures in this story was Alan Turing, whose ideas laid the foundation for both AI and modern computing.",
+          },
+          {
+            type: "paragraph",
+            text: "In addition to the famous Turing Test, one of his greatest contributions was the realization that anything which can be computed numerically can also be automated. This became the theoretical basis for how computers can perform logical operations and problem solving.",
+          },
+          {
+            type: "header",
+            text: "Turing’s Machine and the Birth of Programmable Computing",
+          },
+          {
+            type: "paragraph",
+            text: "Turing designed a simple conceptual device now known as the Turing Machine — a theoretical model capable of performing any computation that can be described mathematically. Although it wasn’t a practical device, it inspired the creation of the programmable computer, a system that could carry out different tasks depending on its programming.",
+          },
+          {
+            type: "paragraph",
+            text: "Before programmable computers, each task would have required its own separate physical machine. Thanks to Turing’s insight, one machine could perform countless tasks simply by changing the program — a revolutionary concept that became the core of programming. Some of the earliest programmable computers were even used during World War II to decrypt German ciphers, in a project where Turing himself played a crucial role.",
+          },
+          {
+            type: "header",
+            text: "John McCarthy and the Birth of Artificial Intelligence",
+          },
+          {
+            type: "paragraph",
+            text: "The English term artificial intelligence (AI) is credited to John McCarthy (1927–2011), often called the father of AI. He coined the term in 1956 when he organized the Dartmouth Conference in New Hampshire, USA — the event considered the official beginning of AI as a field of research.",
+          },
+          {
+            type: "paragraph",
+            text: "McCarthy built on Turing’s idea of automating reasoning, proposing that every part of learning or intelligence could, in principle, be described precisely enough to be simulated by a machine. This remains one of AI’s central ideas — that intelligence, even human-like intelligence, can be represented as computational steps that a machine can follow.",
+          },
+          {
+            type: "header",
+            text: "Why Search and Games Became Early AI Goals",
+          },
+          {
+            type: "paragraph",
+            text: "As computers evolved in the 1950s, AI experiments began to take shape. Some of the earliest and most influential applications were related to games. Games provided ideal testing environments — limited, rule-based worlds that could be easily modeled for computation. Classic board games like checkers, chess, and Go became essential testbeds for AI research and continue to influence modern AI systems today.",
+          },
+          {
+            type: "paragraph",
+            text: "During the 1960s, AI research progressed rapidly, especially in search and planning. Algorithms such as minimax and alpha–beta pruning were developed during this time. These methods became the foundation for game-playing AIs and remain relevant even today, although many improved variations have been created since.",
+          },
+          { type: "header", text: "Conclusion" },
+          {
+            type: "paragraph",
+            text: "The history of AI shows that the field has always been driven by one idea — that reasoning, decision-making, and problem-solving can be described as computation. From Turing’s theoretical machine to McCarthy’s vision of simulating intelligence, and from wartime code-breaking to modern search algorithms, AI has evolved as both a scientific and philosophical pursuit.",
           },
         ],
       },
       {
-        slug: "machine-learning",
-        title: "Machine Learning",
-        excerpt: "Subfield of AI focused on data-driven learning.",
+        slug: "games-and-search",
+        title: "Games and Search in Artificial Intelligence",
+        excerpt:
+          "How game theory, decision trees, and the minimax algorithm shaped modern AI.",
         content: [
-          { type: "header", text: "What is Machine Learning?" },
           {
-            type: "paragraph",
-            text: "In progress...",
+            type: "header",
+            text: "Games and Search in Artificial Intelligence",
           },
           {
+            type: "paragraph",
+            text: "Games have played a key role in the development of artificial intelligence since its early days. To explore the logic behind intelligent decision-making, researchers often turned to two-player perfect-information games such as tic-tac-toe and chess. These games provide a controlled environment where every move, rule, and possible outcome can be clearly defined — making them ideal for testing algorithms that simulate reasoning, planning, and foresight.",
+          },
+          { type: "header", text: "The Example of Tic-Tac-Toe" },
+          {
+            type: "paragraph",
+            text: "Imagine a game of tic-tac-toe between two players, Max and Minni. Each possible position of the game board can be represented as a state, and every move changes the game from one state to another. This idea leads to the key concept of the game tree — a structure where each node represents a possible game state and each branch represents a move.",
+          },
+          {
+            type: "paragraph",
+            text: "The goal of AI is to explore this tree and determine the best move — the one that maximizes the chances of winning while minimizing the opponent’s advantage.",
+          },
+          { type: "header", text: "Minimizing and Maximizing" },
+          {
+            type: "paragraph",
+            text: "In AI terms, each player has a goal: Max tries to maximize the outcome value (+1 for a win), and Min tries to minimize it (–1 for a loss). By assigning numeric values to each end state, the AI can reason backwards through the tree and predict the best possible move, assuming both players play optimally.",
+          },
+          { type: "header", text: "From End States to Decisions" },
+          {
+            type: "paragraph",
+            text: "When the AI evaluates the game tree, it can work backward from end states to the root. At Min’s turns, it selects the smallest value, and at Max’s turns, the largest. Repeating this process determines the value of the root node — the value of the game — showing whether the starting position leads to a win, loss, or draw under perfect play.",
+          },
+          { type: "header", text: "The Minimax Algorithm" },
+          {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/ai/minmax.png",
+            alt: "Illustration of the Minimax Algorithm in a game tree",
+            caption: "Minimax Algorithm Example",
+          },
+          {
+            type: "paragraph",
+            text: "This reasoning forms the foundation of the minimax algorithm, one of the earliest and most influential methods in game-playing AI. It systematically explores all possible moves, alternately maximizing and minimizing values to determine optimal decisions. In theory, minimax can find the best move in any deterministic, two-player, zero-sum game — such as tic-tac-toe, connect four, chess, or Go.",
+          },
+          { type: "header", text: "The Problem of Large Game Trees" },
+          {
+            type: "paragraph",
+            text: "A major limitation of minimax is the rapid growth in the number of possible game states — known as combinatorial explosion. In chess, for example, each position has an average of 35 possible moves. Just ten moves ahead would require examining more than 2.7 trillion possibilities, far beyond practical limits.",
+          },
+          { type: "header", text: "Heuristics and Practical AI" },
+          {
+            type: "paragraph",
+            text: "To handle this complexity, AI systems use heuristics — simplified evaluation functions that estimate the quality of a position. In chess, heuristics may value pieces differently (queens being strongest) or reward control of the center. These techniques let AI make strong decisions without exploring every possible outcome.",
+          },
+          {
+            type: "paragraph",
+            text: "IBM’s Deep Blue, which defeated Garry Kasparov in 1997, used a combination of minimax and advanced heuristics to analyze millions of positions per second, showing how these principles can work at scale.",
+          },
+          { type: "header", text: "Conclusion" },
+          {
+            type: "paragraph",
+            text: "The study of games has shaped artificial intelligence for decades. Through concepts like game trees, minimax, and heuristic evaluation, researchers have learned how to formalize reasoning and strategy. Even though real-world problems are rarely as structured as board games, these same principles — exploring possibilities, optimizing outcomes, and making informed decisions — remain at the heart of AI today.",
           },
         ],
       },
-      {
-        slug: "neuronal-networks",
-        title: "Neuronal Networks",
-        excerpt: "AI systems inspired by the human brain.",
-        content: [
-          { type: "header", text: "What are Neuronal Networks?" },
-          {
-            type: "paragraph",
-            text: "In progress...",
-          },
-          {
-            type: "image",
-            src: "",
-            alt: "",
-            caption: "",
-          },
-        ],
-      },
+
       {
         slug: "natural-language-processing",
         title: "Natural Language Processing",

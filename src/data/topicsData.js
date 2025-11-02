@@ -1253,20 +1253,145 @@ const topics = [
       },
 
       {
-        slug: "natural-language-processing",
-        title: "Natural Language Processing",
-        excerpt: "AI's ability to understand and generate human language.",
+        slug: "types-of-machine-learning",
+        title: "Types of Machine Learning",
+        excerpt: "An introduction to the main categories of machine learning.",
         content: [
-          { type: "header", text: "Natural Language Processing Overview" },
+          {
+            type: "header",
+            text: "Types of Machine Learning",
+          },
           {
             type: "paragraph",
-            text: "In progress...",
+            text: "A classic example used to demonstrate machine learning is handwritten digit recognition. In this task, the goal is to teach a computer to correctly identify digits (0–9) from images — something that’s easy for humans but surprisingly challenging for machines.",
           },
           {
             type: "image",
-            src: "",
-            alt: "",
-            caption: "",
+            src: "/topics/ai/mnist.png",
+            alt: "Examples of handwritten digits from the MNIST dataset",
+            caption: "Handwritten Digits from the MNIST Dataset",
+          },
+          {
+            type: "paragraph",
+            text: "Researchers often use a famous dataset called MNIST, which contains thousands of handwritten numbers. Each image is labeled with the correct digit, even though many of them are messy or unclear. Instead of writing thousands of fixed rules like 'if there’s a circle, it’s probably a zero,' machine learning allows the computer to learn the patterns automatically from examples. This is much more efficient — and much more powerful.",
+          },
+          {
+            type: "header",
+            text: "The Three Main Types of Machine Learning",
+          },
+          {
+            type: "paragraph",
+            text: "Machine learning can be divided into three main categories, depending on the type of problem and the data available.",
+          },
+          {
+            type: "header",
+            text: "1. Supervised Learning — Learning with a Teacher",
+          },
+          {
+            type: "paragraph",
+            text: "In supervised learning, the algorithm is given examples that already include the correct answer. For each input (like a photo of a traffic sign), the model learns to predict the right output (like 'stop sign' or 'speed limit'). This is like learning with a teacher — you show the system examples and correct answers until it can make predictions on its own.",
+          },
+          {
+            type: "paragraph",
+            text: "Examples include recognizing digits from the MNIST dataset, detecting fake Twitter accounts (input: user behavior, output: 'fake' or 'real'), or predicting a house price based on location, size, and condition — a task known as regression because the output is a numerical value.",
+          },
+          {
+            type: "paragraph",
+            text: "Supervised learning is used in many applications such as spam filters, medical diagnosis, and stock price forecasting.",
+          },
+          {
+            type: "header",
+            text: "2. Unsupervised Learning — Finding Patterns without Guidance",
+          },
+          {
+            type: "paragraph",
+            text: "In unsupervised learning, there are no labels or correct answers. The goal is not to predict outcomes but to discover hidden patterns or structures in the data. This might mean grouping similar examples together (clustering) or visualizing relationships between data points.",
+          },
+          {
+            type: "paragraph",
+            text: "For example, a grocery store could analyze customer purchases using loyalty card data. Without knowing anything about the customers beforehand, an unsupervised algorithm might find groups such as 'budget health enthusiasts,' 'seafood lovers,' or 'pizza and cola every day' shoppers. The algorithm can identify these clusters, but humans still need to interpret and name them meaningfully.",
+          },
+          {
+            type: "paragraph",
+            text: "Another interesting form of unsupervised learning is generative learning. Generative models such as Generative Adversarial Networks (GANs) can create realistic new data — for instance, human face images that look completely real but are actually computer-generated.",
+          },
+          {
+            type: "paragraph",
+            text: "Generative learning has grown rapidly in recent years and has led to important discussions about synthetic media, creativity, and ethics. This topic will be explored later in the course in Part 6.",
+          },
+          {
+            type: "header",
+            text: "3. Reinforcement Learning — Learning by Trial and Error",
+          },
+          {
+            type: "paragraph",
+            text: "Reinforcement learning is based on the idea of learning from interaction. An agent takes actions in an environment and receives rewards or penalties based on its performance. Over time, it learns to maximize rewards — much like how humans and animals learn through experience.",
+          },
+          {
+            type: "paragraph",
+            text: "Examples include self-driving cars learning to stay on the road safely, robots learning to walk, or game-playing AIs like AlphaGo that improve by playing millions of rounds against themselves.",
+          },
+          {
+            type: "paragraph",
+            text: "This type of learning is especially useful in complex environments where feedback is delayed or only received at the end of a task — such as completing a race, winning a game, or avoiding collisions.",
+          },
+          {
+            type: "header",
+            text: "Example: Nearest Neighbor Methods and Recommendations",
+          },
+          {
+            type: "image",
+            src: "/topics/ai/nnm.png",
+            alt: "Illustration of Nearest Neighbor Methods",
+            caption: "Nearest Neighbor Methods Example",
+            size: "large",
+          },
+          {
+            type: "paragraph",
+            text: "Some models make predictions by comparing a new example to known cases and borrowing their labels. This is the nearest neighbor idea. You can picture examples on a two-dimensional plot, where each point has two features, such as a patient’s age and blood sugar level. A new point is assigned to the class of its closest neighbor, which might be shown as the green class in a diagram.",
+          },
+          {
+            type: "paragraph",
+            text: "Screens are two-dimensional, but real data can include many features. In practice, the nearest neighbor concept generalizes to any number of dimensions, even fifty or more. We cannot draw a fifty-dimensional plot, so we define similarity numerically.",
+          },
+          {
+            type: "paragraph",
+            text: "What does “nearest” mean? In simple geometric settings, distance is often measured with Euclidean distance, the straight-line length between two points. For text, code, or other abstract data, geometric distance may not be meaningful, so other similarity measures are used. The choice of distance is always task-dependent.",
+          },
+          {
+            type: "paragraph",
+            text: "In MNIST digit recognition, one simple similarity measure compares pixel values at the same positions, then sums the agreements. This works because MNIST images are centered. It is sensitive to small shifts or rotations, however. For example, sliding a “1” a few pixels sideways may look identical to us, yet pixel-by-pixel comparison changes significantly.",
+          },
+          {
+            type: "paragraph",
+            text: "The same neighbor logic appears in recommendation systems. Collaborative filtering predicts what a user might like based on the behavior of other, similar users. If people with listening habits like yours enjoy a newly added 1980s disco track, the system will likely recommend it to you. If most similar users stop after a few seconds, the system will not push it aggressively. These methods can improve relevance, but they can also create filter bubbles if not designed carefully.",
+          },
+          {
+            type: "header",
+            text: "Common Pitfalls — Overfitting",
+          },
+          {
+            type: "image",
+            src: "/topics/ai/overfit.png",
+            alt: "Illustration of Overfitting in Machine Learning",
+            caption: "Underfitting, Overfitting and Right Fit example",
+          },
+          {
+            type: "paragraph",
+            text: "When training a model, one of the biggest mistakes is overfitting — when the model becomes too perfect on training data but fails on new data. It’s like a student memorizing all the answers instead of truly understanding the topic.",
+          },
+          {
+            type: "paragraph",
+            text: "Flexible models such as neural networks can overfit easily if the dataset is small. Simpler models like linear regression are less flexible but often more generalizable. The key is balance — finding a model that’s not too rigid and not too flexible.",
+          },
+          {
+            type: "paragraph",
+            text: "Avoiding overfitting and selecting the right level of model complexity is one of the most essential skills for any data scientist.",
+          },
+
+          {
+            type: "paragraph",
+            text: "Machine learning is about teaching computers to learn from data rather than being programmed with fixed rules. Supervised learning learns from labeled examples, unsupervised learning discovers hidden structures, and reinforcement learning learns through feedback and experience. In all cases, the goal is the same — to build models that generalize well, not just memorize patterns.",
           },
         ],
       },

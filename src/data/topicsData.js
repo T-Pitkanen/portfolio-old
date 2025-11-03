@@ -930,106 +930,147 @@ const topics = [
     subtopics: [
       {
         slug: "what-is-ai",
-        title: "What is AI?",
+        title: "What Is Artificial Intelligence?",
         excerpt:
-          "A deep look into artificial intelligence, its examples, key concepts, and related fields.",
+          "A clear overview of artificial intelligence, its definitions, uses, and related fields.",
         content: [
-          { type: "header", text: "Artificial Intelligence (AI)" },
+          {
+            type: "header",
+            text: "Artificial Intelligence (AI)",
+          },
           {
             type: "paragraph",
-            text: "Artificial Intelligence, or AI, refers to computer systems that can perform tasks requiring human-like intelligence — such as perception, reasoning, learning, and decision-making. Its meaning varies: for some, AI represents futuristic thinking machines; for others, it’s simply advanced data processing. AI is not a single technology but a broad field of research and application inside computer science.",
+            text: "Artificial Intelligence, or AI, refers to computer systems capable of performing tasks that typically require human-like intelligence, such as perception, reasoning, learning, and decision-making. AI is not a single invention but a broad discipline within computer science that combines multiple technologies and methods. For some, AI evokes images of thinking machines; for others, it simply represents advanced automation and data analysis.",
           },
 
-          { type: "header", text: "Examples of AI in Use" },
+          {
+            type: "header",
+            text: "Examples of AI in Practice",
+          },
           {
             type: "paragraph",
-            text: "AI can be found in many modern applications that shape our everyday lives. Three key examples are self-driving cars, recommendation systems, and image or video processing.",
+            text: "AI technologies are embedded in many systems we use daily. Common examples include self-driving vehicles, recommendation engines, and image or video analysis tools.",
           },
 
-          { type: "subheader", text: "Self-driving Cars" },
+          {
+            type: "header",
+            text: "Self-Driving Cars",
+          },
           {
             type: "paragraph",
-            text: "Self-driving cars combine several AI techniques, including route planning, computer vision, and real-time decision-making. Their goal is to improve road safety and traffic efficiency. Similar technologies are used in drones, delivery robots, and autonomous ships.",
+            text: "Autonomous vehicles combine several AI techniques, including route optimization, computer vision, and real-time decision-making. Their purpose is to enhance safety, efficiency, and sustainability in transportation. The same principles extend to drones, warehouse robots, and autonomous ships.",
           },
 
-          { type: "subheader", text: "Recommendation Systems" },
+          {
+            type: "header",
+            text: "Recommendation Systems",
+          },
           {
             type: "paragraph",
-            text: "Recommendation algorithms personalize what each user sees in platforms like Netflix, Spotify, and Google. While this improves user experience, it also brings challenges such as filter bubbles, fake news, and the manipulation of public opinion.",
+            text: "Recommendation algorithms personalize what users see on platforms such as Netflix, Spotify, and YouTube. They analyze viewing and listening behavior to predict what content each user might enjoy next. While this improves user experience, it can also create filter bubbles, spread misinformation, and amplify bias.",
           },
 
-          { type: "subheader", text: "Image and Video Processing" },
+          {
+            type: "header",
+            text: "Image and Video Processing",
+          },
           {
             type: "paragraph",
-            text: "AI-powered image and video systems can recognize faces, tag people in photos, and detect objects. They are used in security, photography, and self-driving vehicles. However, AI can also generate highly realistic fake media, known as deepfakes, raising concerns about authenticity and trust.",
+            text: "AI-driven image and video systems can recognize faces, identify objects, and tag people automatically. They are widely used in photography, surveillance, and autonomous navigation. At the same time, the same technology can generate convincing fake media, or deepfakes, raising concerns about authenticity and misinformation.",
           },
 
-          { type: "header", text: "Why Defining AI Is Difficult" },
+          {
+            type: "header",
+            text: "Why AI Is Hard to Define",
+          },
           {
             type: "paragraph",
-            text: "AI is challenging to define for several reasons. First, there is no single universal definition — the field constantly evolves. Once a task becomes common, it often stops being seen as AI. Second, science fiction has influenced how people imagine AI, creating unrealistic expectations. Finally, tasks that seem easy for humans, like grasping an object, are extremely difficult for machines, while tasks that appear complex to us, like playing chess, are relatively simple for computers.",
+            text: "Defining AI is difficult because the field evolves continuously. Once a task becomes routine, it often stops being labeled as AI. Cultural influence and science fiction have also shaped public expectations, sometimes blurring the line between current reality and imagination. Interestingly, tasks that seem simple to humans, like grasping an object, are complex for machines, while tasks that seem difficult, such as playing chess, are relatively straightforward for computers.",
           },
 
-          { type: "header", text: "Core Qualities of AI" },
+          {
+            type: "header",
+            text: "Core Qualities of AI",
+          },
           {
             type: "paragraph",
-            text: "Two essential characteristics define AI systems: autonomy and adaptivity. Autonomy means the ability to act independently in complex environments, while adaptivity refers to improving performance through experience and learning. Although we often describe AI using human-like words such as 'thinking' or 'understanding', these are only metaphors — AI does not truly understand as humans do.",
+            text: "Two key properties characterize AI systems: autonomy and adaptivity. Autonomy refers to operating independently in dynamic environments, while adaptivity means improving performance through learning and experience. Although we often describe AI as 'thinking' or 'understanding', these are metaphors—AI systems process data without true comprehension or awareness.",
           },
 
-          { type: "header", text: "Misleading Language in AI" },
+          {
+            type: "header",
+            text: "Misleading Language and 'Suitcase Words'",
+          },
           {
             type: "paragraph",
-            text: "Many AI-related words, like intelligence, learning, and understanding, are what Marvin Minsky called 'suitcase words' — they carry multiple meanings and can easily mislead. AI is narrow, not general, meaning it is built for specific tasks. It’s not useful to compare different AIs by 'intelligence level'; a chess program is not smarter than a spam filter, they are simply skilled in different areas. A clearer way to describe AI is to say that a system uses AI methods rather than calling it an AI itself.",
+            text: "Terms like intelligence, learning, and understanding can be misleading because they carry multiple meanings. Marvin Minsky called these 'suitcase words'—concepts packed with different interpretations. Most AI today is narrow, designed for specific tasks rather than general intelligence. Comparing AIs by intelligence level makes little sense; a chess engine and a spam filter are skilled in different domains. It is clearer to say that a system uses AI methods than to call the system 'an AI'.",
           },
 
-          { type: "header", text: "AI as a Field of Study" },
+          {
+            type: "header",
+            text: "AI as a Scientific Discipline",
+          },
           {
             type: "paragraph",
-            text: "AI should be seen as a scientific discipline, not a countable thing. We wouldn’t say 'one AI, two AIs' any more than we’d say 'one biology, two biologies'. Instead, AI represents a set of methods, concepts, and subfields within computer science, similar to mathematics or physics.",
+            text: "AI should be viewed as a field of study rather than a countable object. We don’t speak of 'one AI, two AIs' any more than we would say 'one biology, two biologies'. Instead, AI represents a collection of techniques, algorithms, and principles within computer science, much like mathematics or physics.",
           },
 
-          { type: "header", text: "Related Fields and Subtopics" },
+          {
+            type: "header",
+            text: "Related Fields and Subtopics",
+          },
           {
             type: "paragraph",
-            text: "To understand AI fully, it’s important to know its related fields — machine learning, deep learning, data science, and robotics — which all contribute to how AI works in practice.",
+            text: "AI draws from several closely connected areas—machine learning, deep learning, data science, and robotics. Together they form the foundation of most practical AI systems.",
           },
 
-          { type: "subheader", text: "Machine Learning (ML)" },
+          {
+            type: "header",
+            text: "Machine Learning (ML)",
+          },
           {
             type: "paragraph",
-            text: "Machine learning is a subfield of AI that enables systems to become adaptive and improve through data. It can be defined as systems that enhance their performance in a specific task as they gain experience or data.",
+            text: "Machine learning enables systems to improve automatically through data and experience. Instead of being explicitly programmed for each task, ML models learn patterns from examples, making them more adaptable and effective across diverse applications.",
           },
 
-          { type: "subheader", text: "Deep Learning" },
+          {
+            type: "header",
+            text: "Deep Learning",
+          },
           {
             type: "paragraph",
-            text: "Deep learning is a subfield of machine learning that uses complex, layered neural networks. The term 'deep' refers to the number and complexity of layers in the model. With modern computing power, deep learning has achieved remarkable progress in image recognition, speech processing, and natural language understanding.",
+            text: "Deep learning is a branch of machine learning that uses multi-layered neural networks. The term 'deep' refers to the number of processing layers. This approach has led to major breakthroughs in image recognition, speech processing, and natural language understanding.",
           },
 
-          { type: "subheader", text: "Data Science" },
+          {
+            type: "header",
+            text: "Data Science",
+          },
           {
             type: "paragraph",
-            text: "Data science is an interdisciplinary field that combines machine learning, statistics, algorithms, and data management. It applies AI techniques to real-world problems in areas like business, biology, and technology. Data scientists need both technical and domain-specific knowledge, and most data science projects involve at least a small touch of AI.",
+            text: "Data science combines statistics, algorithms, and computing to extract insights from data. It applies AI methods to real-world problems in business, health, and research. Data scientists bridge technical and domain expertise, using tools like machine learning to turn data into action.",
           },
 
-          { type: "subheader", text: "Robotics" },
           {
-            type: "paragraph",
-            text: "Robotics focuses on building and programming machines that operate in the real world. It integrates nearly all AI areas, including computer vision, speech recognition, natural language processing, and affective computing — systems that can interpret or mimic emotions. Machine learning plays a key role in enabling robots to adapt and improve.",
+            type: "header",
+            text: "Robotics",
           },
           {
             type: "paragraph",
-            text: "A robot is a device equipped with sensors for observation, actuators for performing actions, and programmable logic to execute various tasks. Robots don’t need to look human — a dishwasher or a self-driving car can be considered a robot, but a chatbot is not a physical robot.",
+            text: "Robotics integrates multiple AI techniques to create machines that interact with the physical world. Robots use sensors to perceive their environment, actuators to move or manipulate objects, and algorithms to plan actions. They need not look human—a dishwasher or self-driving car qualifies as a robot, even if a chatbot does not.",
           },
 
-          { type: "header", text: "Key Takeaways" },
           {
-            type: "paragraph",
-            text: "Artificial intelligence is a broad and constantly evolving field that brings together many technologies under one concept. It is not a single invention or tool but rather a set of methods that allow systems to act autonomously and adapt to new information. Understanding related fields like machine learning, deep learning, data science, and robotics helps to see how AI functions in practice.",
+            type: "header",
+            text: "Key Takeaways",
           },
           {
             type: "paragraph",
-            text: "AI should be viewed more as a capability than as an independent entity. Instead of thinking about a single AI, we should think about how AI principles are used in various systems to solve specific problems. The words often used to describe AI, like 'intelligence' or 'understanding', can be misleading since computers don’t process meaning the same way humans do. Despite that, AI’s influence on daily life is already massive — shaping transportation, media, and research — and will continue to grow as technology advances and new applications emerge.",
+            text: "Artificial intelligence is a broad, evolving discipline that combines many technologies under one concept. It enables systems to act autonomously and adapt through experience, but it is not a single invention or product. Understanding its related fields—machine learning, deep learning, data science, and robotics—helps explain how AI operates in practice.",
+          },
+          {
+            type: "paragraph",
+            text: "AI should be viewed as a capability rather than an entity. Instead of speaking about a single AI, we should focus on how AI principles are applied to solve specific problems. Words like 'intelligence' or 'understanding' are metaphors, not literal truths. Despite these nuances, AI already shapes modern life—transforming transportation, media, healthcare, and research—and its influence will continue to expand as technology advances.",
           },
         ],
       },
@@ -1038,41 +1079,50 @@ const topics = [
         slug: "philosophy-of-ai",
         title: "The Philosophy of Artificial Intelligence",
         excerpt:
-          "Exploring the philosophical questions behind intelligence, consciousness, and AI's true nature.",
+          "Exploring the philosophical questions behind intelligence, consciousness, and the true nature of AI.",
         content: [
-          { type: "header", text: "The Philosophy of Artificial Intelligence" },
+      
           {
             type: "paragraph",
-            text: "Artificial intelligence inevitably raises deep philosophical questions. It invites us to wonder whether intelligent behavior requires the presence of a mind, and to what extent consciousness can be created computationally. These questions connect computer science with philosophy, psychology, and even the study of human thought itself.",
+            text: "Artificial intelligence raises some of the deepest questions in modern philosophy. Can a machine truly think, or only appear to think? Does intelligent behavior require consciousness, or can it emerge from computation alone? These questions link computer science to philosophy, psychology, and cognitive science, and invite us to reflect on what intelligence really means.",
           },
 
-          { type: "header", text: "The Turing Test" },
+          {
+            type: "header",
+            text: "The Turing Test",
+          },
           {
             type: "image",
             src: "/topics/ai/turing.png",
-            alt: "Illustration of the Turing Test with a human, a computer",
+            alt: "Illustration of the Turing Test with a human and a computer",
             caption: "Alan Turing and The Turing Machine",
           },
           {
             type: "paragraph",
-            text: "Alan Turing (1912–1954), an English mathematician and logician often called the father of computer science, was fascinated by the nature of intelligence and thinking — and by whether these could be simulated by machines. His most famous contribution to AI philosophy is the Turing Test, originally known as the imitation game.",
+            text: "Alan Turing (1912–1954), the British mathematician often regarded as the father of computer science, explored whether machines could demonstrate genuine intelligence. His most famous contribution, the Turing Test—originally called the imitation game—set out to define intelligence through behavior rather than biology.",
           },
           {
             type: "paragraph",
-            text: "In the test, a human interviewer communicates with two participants by exchanging written messages, much like a chat conversation. One participant is a human, and the other is a computer. If the interviewer cannot reliably tell which one is which, the machine is said to have passed the test — suggesting that its behavior is indistinguishable from human intelligence. Turing’s idea can be summarized as: 'Something is intelligent if it appears intelligent.' In other words, if we cannot distinguish a machine’s behavior from that of a human, then we may call it intelligent — at least in a behavioral sense.",
+            text: "In the test, a human interrogator exchanges written messages with two unseen participants: one human and one computer. If the interrogator cannot reliably tell which is which, the computer is said to have passed the test. Turing’s core idea was simple: if something behaves intelligently, we may as well call it intelligent. In this behavioral sense, intelligence depends on perception, not on the internal process behind it.",
           },
 
-          { type: "header", text: "Does Acting Human Mean Being Intelligent?" },
           {
-            type: "paragraph",
-            text: "One of the main criticisms of the Turing Test is that it may measure humanness rather than true intelligence. Several chatbot programs have 'passed' the test by imitating human quirks — avoiding questions, making grammar mistakes, or joking nonsensically — rather than showing real understanding.",
+            type: "header",
+            text: "Does Acting Human Mean Being Intelligent?",
           },
           {
             type: "paragraph",
-            text: "A famous case is Eugene Goostman, a chatbot that pretended to be a 13-year-old Ukrainian boy. His responses were full of humor, distractions, and deliberate confusion, which made ten out of thirty judges believe he was human. This example shows how easily we can mistake conversational style for intelligence, especially when randomness or personality is added to machine responses.",
+            text: "Critics argue that the Turing Test measures humanness more than intelligence. Some programs have 'passed' it by mimicking human imperfections—dodging questions, joking awkwardly, or making grammatical mistakes—rather than by reasoning or understanding.",
+          },
+          {
+            type: "paragraph",
+            text: "A well-known example is Eugene Goostman, a chatbot designed to imitate a 13-year-old Ukrainian boy. Its humor, confusion, and erratic replies convinced several judges it was human. The experiment revealed how easily personality and randomness can masquerade as intelligence, blurring the line between simulation and understanding.",
           },
 
-          { type: "header", text: "The Chinese Room Argument" },
+          {
+            type: "header",
+            text: "The Chinese Room Argument",
+          },
           {
             type: "image",
             src: "/topics/ai/searle.png",
@@ -1081,20 +1131,26 @@ const topics = [
           },
           {
             type: "paragraph",
-            text: "Philosopher John Searle challenged the idea that intelligent behavior automatically implies real understanding. He proposed the Chinese Room thought experiment: imagine a person who doesn’t understand Chinese, locked in a room with a huge rulebook that explains exactly how to respond to Chinese sentences slipped under the door. By following the rules, the person can produce correct responses — convincing outsiders that they 'know' Chinese — even though they understand nothing of the language.",
+            text: "Philosopher John Searle challenged the idea that intelligent behavior implies true understanding. In his Chinese Room thought experiment, a person who does not know Chinese sits in a room with a detailed rulebook explaining how to respond to Chinese characters slipped under the door. By following the rules, the person can produce perfect answers—convincing outsiders that they understand Chinese—yet they grasp no meaning at all.",
           },
           {
             type: "paragraph",
-            text: "Searle’s point is that a computer program can simulate intelligence without actually understanding anything. It manipulates symbols mechanically but has no awareness or comprehension. Therefore, even if a machine passes the Turing Test, it doesn’t necessarily mean it possesses real intelligence or consciousness — only that it behaves as if it did.",
+            text: "Searle argued that computers operate in the same way. They manipulate symbols according to formal rules but have no awareness of what the symbols mean. Even if a program passes the Turing Test, it does not necessarily possess understanding or consciousness—it only behaves as though it does.",
           },
 
-          { type: "header", text: "Is a Self-Driving Car Intelligent?" },
+          {
+            type: "header",
+            text: "Is a Self-Driving Car Intelligent?",
+          },
           {
             type: "paragraph",
-            text: "The Chinese Room argument highlights the difference between performing intelligently and being intelligent. A self-driving car, for instance, can steer, detect obstacles, and make real-time decisions — but does it understand what it’s doing? The car doesn’t 'see' or 'know' in the human sense; it processes data based on rules and probabilities. This example reinforces Searle’s view that AI’s behavior can look intelligent without involving genuine thought or awareness.",
+            text: "The Chinese Room argument highlights the difference between acting intelligently and being intelligent. A self-driving car can recognize lanes, detect obstacles, and make split-second decisions, but it does not 'know' what a pedestrian or a traffic sign truly is. It processes data and follows algorithms without subjective awareness. Its behavior is intelligent in appearance, not in experience.",
           },
 
-          { type: "header", text: "How Important Is Philosophy in Practice?" },
+          {
+            type: "header",
+            text: "How Important Is Philosophy in Practice?",
+          },
           {
             type: "image",
             src: "/topics/ai/mccarthy.png",
@@ -1103,28 +1159,33 @@ const topics = [
           },
           {
             type: "paragraph",
-            text: "Questions about the nature of mind, consciousness, and intelligence are fascinating but difficult to answer. Philosophers, scientists, and authors have debated them for decades, often without reaching clear conclusions. However, as computer scientist John McCarthy once noted, 'The philosophy of AI has about as much influence on AI practice as the philosophy of science has on scientific practice.' In other words, while philosophical discussions are intellectually enriching, practical AI development focuses more on solving real-world problems than on defining what 'true intelligence' means.",
-          },
-
-          { type: "header", text: "General vs. Narrow AI" },
-          {
-            type: "paragraph",
-            text: "You may have heard the terms general AI (AGI) and narrow AI. Narrow AI refers to systems that are designed to perform one specific task — like recognizing faces, recommending music, or driving a car. General AI, on the other hand, would be capable of solving any intellectual problem that a human can. All existing AI today is narrow AI; true AGI remains a concept of science fiction. Researchers largely stopped pursuing AGI directly after decades of little progress, while narrow AI continues to advance rapidly and produce practical results.",
-          },
-
-          { type: "header", text: "Strong vs. Weak AI" },
-          {
-            type: "paragraph",
-            text: "A similar distinction exists between strong AI and weak AI. Strong AI would mean creating a machine that genuinely has a mind — one that is conscious and self-aware. Weak AI, in contrast, refers to the systems we already have: programs that can perform intelligent tasks but lack true understanding or consciousness. In this sense, all current AI — no matter how impressive — is weak AI. It can act intelligently but does not think in the human sense.",
+            text: "Philosophical questions about mind and consciousness are profound but notoriously difficult to answer. As computer scientist John McCarthy once observed, 'The philosophy of AI has about as much influence on AI practice as the philosophy of science has on scientific practice.' In short, while philosophy helps us think critically about what intelligence means, practical AI focuses on solving specific technical problems rather than defining thought itself.",
           },
 
           {
+            type: "header",
+            text: "General vs. Narrow AI",
+          },
+          {
             type: "paragraph",
-            text: "Artificial intelligence philosophy explores profound questions about the nature of intelligence, consciousness, and the human mind. Thought experiments like the Turing Test and the Chinese Room shed light on what it means to 'think,' while also revealing the limits of machine understanding. Machines can simulate intelligence and even mimic human behavior, but genuine understanding — at least for now — remains uniquely human.",
+            text: "AI research distinguishes between general and narrow intelligence. Narrow AI refers to systems designed for specific tasks—face recognition, music recommendation, or autonomous driving. General AI, or AGI, would match human versatility and reasoning across any domain. All existing AI today is narrow; AGI remains hypothetical, more a philosophical concept than an engineering reality.",
+          },
+
+          {
+            type: "header",
+            text: "Strong vs. Weak AI",
+          },
+          {
+            type: "paragraph",
+            text: "Another distinction divides strong and weak AI. Strong AI would possess consciousness and self-awareness—a true mind. Weak AI, which includes all systems today, can perform intelligent actions without actual understanding. It follows rules, processes data, and produces outcomes that appear smart, but it does not think or feel as humans do.",
+          },
+
+          {
+            type: "paragraph",
+            text: "The philosophy of AI explores what it means to think, know, or be aware. Thought experiments like the Turing Test and the Chinese Room reveal both the possibilities and limits of artificial intelligence. Machines can imitate reasoning and simulate conversation, but genuine understanding—at least for now—remains a uniquely human trait.",
           },
         ],
       },
-
       {
         slug: "solving-problems-with-ai",
         title: "Solving Problems with Artificial Intelligence",
@@ -1392,6 +1453,131 @@ const topics = [
           {
             type: "paragraph",
             text: "Machine learning is about teaching computers to learn from data rather than being programmed with fixed rules. Supervised learning learns from labeled examples, unsupervised learning discovers hidden structures, and reinforcement learning learns through feedback and experience. In all cases, the goal is the same — to build models that generalize well, not just memorize patterns.",
+          },
+        ],
+      },
+      {
+        slug: "regression-basics",
+        title: "Regression: Linear and Logistic",
+        excerpt:
+          "A concise guide to linear and logistic regression, when to use each, and what to study next.",
+        content: [
+          {
+            type: "paragraph",
+            text: "Regression is supervised learning that predicts numeric or probabilistic outcomes. We introduce linear regression and its close relative, logistic regression, and clarify how they differ from classification methods like nearest neighbors.",
+          },
+
+          {
+            type: "header",
+            text: "Regression vs. Classification",
+          },
+          {
+            type: "paragraph",
+            text: "Both are supervised learning, yet their targets differ. Classification selects from a finite set of labels, such as spam or not spam, or digits 0 to 9. Regression outputs a real-valued number, such as price, distance, or revenue. Choose regression when the answer is continuous; choose classification when the answer is a category.",
+          },
+
+          {
+            type: "header",
+            text: "Linear Regression, Intuition",
+          },
+          {
+            type: "paragraph",
+            text: "Linear regression models a target as a weighted sum of input features plus an intercept. Think of a shopping bill where the total equals quantities times prices, then add a base fee if needed. Linearity means that increasing a feature by a fixed amount changes the prediction by a constant amount.",
+          },
+
+          {
+            type: "header",
+            text: "Coefficients, Weights, and Intercept",
+          },
+          {
+            type: "paragraph",
+            text: "Each feature has a coefficient that expresses its marginal effect on the prediction, while the intercept represents the baseline value when all features are zero. These parameters are often directly interpretable and may be more insightful than the predictions themselves.",
+          },
+
+          {
+            type: "header",
+            text: "Learning the Model",
+          },
+          {
+            type: "paragraph",
+            text: "Given input features and true targets, training estimates coefficients that minimize prediction error. The common approach is least squares, with closed-form or iterative solvers. Real data includes noise; therefore the solution fits trends rather than exact totals.",
+          },
+
+          {
+            type: "header",
+            text: "Visualizing and Interpreting",
+          },
+          {
+            type: "paragraph",
+            text: "Scatter plots with a fitted line help build intuition. The slope shows change per unit of a feature; the intercept shows the baseline. Remember that association does not prove causation; external factors may drive observed relationships.",
+          },
+          {
+            type: "image",
+            src: "/topics/ai/linear-fit.png",
+            alt: "Scatter plot with a linear fit line",
+            caption: "Data points with a fitted linear regression line",
+          },
+
+          {
+            type: "header",
+            text: "Logistic Regression",
+          },
+          {
+            type: "paragraph",
+            text: "Logistic regression uses a linear combination of features, then maps it through the sigmoid function to produce probabilities for classes. With a threshold, probabilities convert to class labels. The model also supports multiclass problems through one-vs-rest or softmax extensions and can provide calibrated probabilities for decision making.",
+          },
+
+          {
+            type: "header",
+            text: "When to Use Which",
+          },
+          {
+            type: "paragraph",
+            text: "Use linear regression for continuous outcomes such as price, demand, or risk score. Use logistic regression for categorical outcomes, such as pass or fail, purchase or not, spam or not. Both benefit from careful feature engineering, scaling, and regularization.",
+          },
+
+          {
+            type: "header",
+            text: "Model Quality and Metrics",
+          },
+          {
+            type: "paragraph",
+            text: "For linear regression, track MSE, RMSE, MAE, and R². For logistic regression, use accuracy, precision, recall, F1, ROC AUC, and PR AUC. Choose metrics that match business cost, for example the cost of false positives versus false negatives.",
+          },
+
+          {
+            type: "header",
+            text: "Data Quality and Bias",
+          },
+          {
+            type: "paragraph",
+            text: "Good results require sufficient, relevant, and representative data. Poor coverage, label noise, or hidden biases degrade performance and may mislead interpretation. Always validate on held-out data and check for demographic or feature-related bias.",
+          },
+
+          {
+            type: "header",
+            text: "Common Uses",
+          },
+          {
+            type: "paragraph",
+            text: "Linear regression: ad click forecasts, retail demand, housing prices, cost estimation, insurance claims, crime rate trends. Logistic regression: risk scoring, medical outcomes, credit default prediction, churn, spam detection, and many other binary or multiclass tasks.",
+          },
+
+          {
+            type: "header",
+            text: "What did I learn?",
+          },
+          {
+            type: "paragraph",
+            text: "Machine learning is needed because many real-world problems are too complex for fixed rule-based programming. Instead of explicitly coding instructions, we let algorithms find patterns in data and use them to make predictions or decisions automatically. This makes machine learning essential in areas like image recognition, recommendation systems, forecasting, and natural language understanding.",
+          },
+          {
+            type: "paragraph",
+            text: "Supervised and unsupervised learning differ mainly in the presence of labels. In supervised learning, each example includes the correct answer, allowing the model to learn direct input–output relationships. Unsupervised learning lacks these labels, focusing instead on discovering hidden structures, clusters, or relationships in data without predefined outcomes.",
+          },
+          {
+            type: "paragraph",
+            text: "In supervised learning, three core methods illustrate the main ideas. The nearest neighbor classifier predicts a class by finding examples most similar to a new input. Linear regression estimates continuous values by combining input features with learned weights. Logistic regression extends linear regression to classification by mapping predictions to probabilities between 0 and 1. Together, these models form the foundation for more advanced techniques used throughout artificial intelligence.",
           },
         ],
       },

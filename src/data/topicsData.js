@@ -1513,7 +1513,7 @@ const topics = [
           },
           {
             type: "image",
-            src: "/topics/ai/linear-fit.png",
+            src: "/topics/ai/linear.png",
             alt: "Scatter plot with a linear fit line",
             caption: "Data points with a fitted linear regression line",
           },

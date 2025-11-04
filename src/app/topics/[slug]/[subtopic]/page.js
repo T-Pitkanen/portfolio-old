@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import topics from "@/data/topicsData";
+import topics from "@/data/topics/topicsData";
 import styles from "./subtopic.module.css";
 import { notFound } from "next/navigation";
 import TableOfContents from "@/app/components/toc/toc";

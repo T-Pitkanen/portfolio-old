@@ -1,5 +1,5 @@
 import Link from "next/link";
-import topics from "@/data/topicsData";
+import topics from "@/data/topics/topicsData";
 import styles from "./topics.module.css";
 
 export default function TopicsIndex() {

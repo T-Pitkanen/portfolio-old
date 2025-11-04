@@ -1192,10 +1192,7 @@ const topics = [
         excerpt:
           "A historical overview of how AI emerged through logic, search, and early problem-solving research.",
         content: [
-          {
-            type: "header",
-            text: "Solving Problems with Artificial Intelligence",
-          },
+       
           {
             type: "paragraph",
             text: "Artificial intelligence is almost as old as computer science itself. Long before the first actual computers existed, people were already fascinated by the idea of automated reasoning and machine intelligence. One of the key figures in this story was Alan Turing, whose ideas laid the foundation for both AI and modern computing.",
@@ -1253,10 +1250,7 @@ const topics = [
         excerpt:
           "How game theory, decision trees, and the minimax algorithm shaped modern AI.",
         content: [
-          {
-            type: "header",
-            text: "Games and Search in Artificial Intelligence",
-          },
+       
           {
             type: "paragraph",
             text: "Games have played a key role in the development of artificial intelligence since its early days. To explore the logic behind intelligent decision-making, researchers often turned to two-player perfect-information games such as tic-tac-toe and chess. These games provide a controlled environment where every move, rule, and possible outcome can be clearly defined — making them ideal for testing algorithms that simulate reasoning, planning, and foresight.",
@@ -1318,10 +1312,7 @@ const topics = [
         title: "Types of Machine Learning",
         excerpt: "An introduction to the main categories of machine learning.",
         content: [
-          {
-            type: "header",
-            text: "Types of Machine Learning",
-          },
+       
           {
             type: "paragraph",
             text: "A classic example used to demonstrate machine learning is handwritten digit recognition. In this task, the goal is to teach a computer to correctly identify digits (0–9) from images — something that’s easy for humans but surprisingly challenging for machines.",

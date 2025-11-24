@@ -1,8 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio & Learning Documentation
+
+A Next.js-based portfolio and educational documentation site showcasing projects and comprehensive guides on software development topics including Agile methodologies, blockchain, AI, and more.
+
+## Features
+
+- **Project Showcase**: Interactive project gallery with image sliders and detailed descriptions
+- **Educational Topics**: Comprehensive guides on:
+  - Project Planning & Documentation (Agile, Scrum, Kanban)
+  - Blockchain & Cryptography
+  - Artificial Intelligence
+  - And more...
+- **Dynamic Content**: Structured content blocks supporting headers, paragraphs, lists, images, and sections
+- **Table of Contents**: Auto-generated sticky sidebar navigation for long-form content
+- **Responsive Design**: Optimized for desktop, tablet, and mobile viewing
+- **Image Modal**: Full-screen image viewing with navigation
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +35,111 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the portfolio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+portfolio-new/
+├── src/
+│   ├── app/
+│   │   ├── components/     # Reusable components (About, Projects, Topics, TOC)
+│   │   ├── topics/         # Topic pages with dynamic routing
+│   │   ├── globals.css     # Global styles
+│   │   └── page.js         # Homepage
+│   └── data/
+│       ├── projectData.js  # Project showcase data
+│       └── topicsData.js   # Educational content data
+├── public/                 # Static assets (images, etc.)
+└── README.md
+```
 
-## Learn More
+## Adding Content
 
-To learn more about Next.js, take a look at the following resources:
+### Adding a New Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `src/data/projectData.js`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```javascript
+{
+  title: "Project Name",
+  goal: "Project objective...",
+  design: "Design decisions...",
+  code: "Technical implementation...",
+  link: "https://project-url.com",
+  image: ["/path/to/image1.png", "/path/to/image2.png"]
+}
+```
+
+### Adding Educational Content
+
+Edit `src/data/topicsData.js` and add subtopics with structured content blocks:
+
+```javascript
+{
+  slug: "topic-slug",
+  title: "Topic Title",
+  excerpt: "Brief description",
+  subtopics: [
+    {
+      slug: "subtopic-slug",
+      title: "Subtopic Title",
+      excerpt: "Brief description",
+      content: [
+        { type: "header", text: "Header Text" },
+        { type: "paragraph", text: "Paragraph content..." },
+        { type: "subheader", text: "Subheader Text" },
+        { type: "list", items: ["Item 1", "Item 2"] },
+        {
+          type: "image",
+          src: "/path/to/image.png",
+          alt: "Image description",
+          caption: "Image caption",
+          size: "medium" // small | medium | large | full
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Content Block Types
+
+- **header**: Main section heading (h2)
+- **subheader**: Subsection heading (h3)
+- **paragraph**: Text content
+- **list**: Bulleted list
+- **image**: Responsive image with optional caption and size variants
+- **section**: Nested content with optional title
+
+## Technologies
+
+- **Framework**: Next.js 14
+- **Styling**: CSS Modules
+- **Components**: React with Server & Client Components
+- **Image Optimization**: Next.js Image component
+- **Routing**: App Router with dynamic routes
+- **Modal**: react-modal
+- **Slider**: Swiper
+
+## Development Notes
+
+- Uses CSS Modules for scoped styling
+- Supports static generation for optimal performance
+- Table of Contents auto-scans headings and generates navigation
+- Responsive images with multiple size variants
+- Sticky sidebar navigation on desktop
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy this portfolio is using [Vercel](https://vercel.com/new):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/portfolio-new)
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+This project is for educational and portfolio purposes.

@@ -17,18 +17,19 @@ const Footer = () => {
                         <span className={styles.cvText}>Download my CV</span>
                     </a>
                 </div> */}
-				<Link href="https://github.com/T-Pitkanen" target="_blank" rel="noopener noreferrer">
+				{/* <Link href="https://github.com/T-Pitkanen" target="_blank" rel="noopener noreferrer">
 					<div className={styles.footerIcon}>
 						<FaGithub className={styles.faIcon} />
 					</div>
 				</Link>
 				<div className={styles.footerEmail}>
 					<p>tiia1.pitkanen@gmail.com</p>
-				</div>
-			</div>
-			<div className={styles.copyright}>
+				</div> */}
+					<div className={styles.copyright}>
 				<span>© 2025 Tiia Pitkänen. All rights reserved.</span>
 			</div>
+			</div>
+		
 		</div>
 	);
 };

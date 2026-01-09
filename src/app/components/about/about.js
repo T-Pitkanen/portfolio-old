@@ -32,15 +32,15 @@ const About = () => {
 
         <p>
           Recently, I’ve gotten more interested in{" "}
-          <strong>data science and analytics</strong>, as well as{" "}
-          <strong>cybersecurity</strong> and <strong>cloud services</strong>.
-          These are something I want to learn later on more, but not just yet.
+          <strong>data and analytics</strong>, as well as{" "}
+          <strong>databases</strong> and <strong>cloud services</strong>.
+          These are something I want to learn alot more of.
         </p>
 
         <p>
           My studies also include <strong>marketing</strong>,{" "}
           <strong>entrepreneurship</strong>, and different types of
-          <strong>sales management</strong>, which I think are great complements
+          <strong> sales management</strong>, which I think are great complements
           to the technical side. We also cover{" "}
           <strong>project management</strong> and <strong>leadership</strong>,
           both of which are important skills for working life.

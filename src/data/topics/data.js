@@ -4,7 +4,7 @@ export const dataTopics = {
   excerpt:
     "Core concepts essential for designing efficient, scalable, and reliable database systems.",
   content: [
-    "A solid understanding of database theory is crucial for any backend developer or data architect. This section covers the foundational principles of structuring data, ensuring integrity through normalization, and creating efficient schemas.",
+    "A solid understanding of database theory is crucial for any backend developer or data architect. This section covers the foundational principles of structuring data, ensuring integrity through normalization, and creating efficient schemas. More content coming....",
   ],
   subtopics: [
     {

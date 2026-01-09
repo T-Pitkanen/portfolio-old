@@ -3,7 +3,7 @@ export const managementTopics = {
     title: "Project Planning & Documentation",
     excerpt: "Fundamentals of Agile methodologies and project documentation.",
     content: [
-      "Project documentation and agile methodologies like Scrum and Kanban are essential for effective project management and team collaboration.",
+      "Project documentation and agile methodologies like Scrum and Kanban are essential for effective project management and team collaboration. More content coming....",
     ],
     subtopics: [
       {

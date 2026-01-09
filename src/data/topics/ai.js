@@ -3,7 +3,7 @@ export const aiTopics = {
   title: "Artificial Intelligence",
   excerpt: "Overview of AI concepts and applications.",
   content: [
-    "AI encompasses machine learning, natural language processing, and robotics.",
+    "AI encompasses machine learning, natural language processing, and robotics. More content coming....",
   ],
   subtopics: [
     {

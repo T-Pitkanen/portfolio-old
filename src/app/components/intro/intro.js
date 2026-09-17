@@ -3,20 +3,22 @@ import { FaCaretDown } from 'react-icons/fa';
 
 const Intro = () => {
 	return (
-		<div className={styles.container}>
+		<header className={styles.container}>
 			<div className={styles.introText}>
 				<h1>HI!</h1>
 				<h2>I&#39;M TIIA</h2>
-			
+
 				<div className={styles.introProjects}>
 					<hr />
 					<p>
 						SEE MY PROJECTS
-						<a href="#projects"><FaCaretDown className={styles.faIcon} /></a>
+						<a href="#projects">
+							<FaCaretDown className={styles.faIcon} />
+						</a>
 					</p>
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 };
 

@@ -75,13 +75,16 @@ const Projects = () => {
               </div>
               <div className={styles.infoContainer}>
                 <a href={project.link}>
-                  <h3>{project.title}</h3>
+                  <h3>
+                    {project.title}
+                    <span className={styles.projectYear}> / {project.year}</span>
+                  </h3>
                 </a>
                 <div className={styles.projectInfo}>
                   <h4>goal</h4>
-                  <p>{project.goal}</p>
+                  <p>{project.description || project.goal}</p>
                   <h4>design</h4>
-                  <p>{project.design}</p>
+                  <p>{project.note || project.design}</p>
                   <h4>code</h4>
                   <p>{project.code} </p>
                 </div>

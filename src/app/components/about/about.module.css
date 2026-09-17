@@ -19,7 +19,7 @@
   color: #D6D6D6;
   line-height: 1.6;
   width: 100%;
-  text-align: left; 
+  text-align: left;
 }
 
 .aboutText h2 {
@@ -40,6 +40,33 @@
   line-height: 1.75;
   margin: 0;
   color: #D6D6D6;
+}
+
+.ageCalculator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+  color: #F8F8F8;
+}
+
+.ageCalculator label {
+  font-size: 1rem;
+}
+
+.ageCalculator input {
+  color: #111;
+  background: #F8F8F8;
+  border: 1px solid #D6D6D6;
+  border-radius: 4px;
+  padding: 0.45rem;
+  font: inherit;
+}
+
+.ageCalculator p {
+  flex-basis: 100%;
+  color: #F8F8F8;
 }
 
 /* Tablet / small laptop */
@@ -72,7 +99,7 @@
     text-underline-offset: 6px;
   }
 
-  .aboutText{
+  .aboutText {
     width: 80%;
   }
 

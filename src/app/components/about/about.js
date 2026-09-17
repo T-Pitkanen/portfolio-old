@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import styles from './about.module.css';
+
+const BIRTH_DATE = '1998-04-05';
 
 const calculateAge = (birthDate) => {
 	const today = new Date();
@@ -17,60 +18,33 @@ const calculateAge = (birthDate) => {
 };
 
 const About = () => {
-	const [birthDate, setBirthDate] = useState('');
-
 	return (
 		<section className={styles.container} aria-labelledby="about-heading">
 			<div className={styles.aboutText}>
 				<h2 id="about-heading">ABOUT ME</h2>
 				<p>
-					{' '}
-					Hey! I&#39;m Tiia — a Business Information Technology student at Vaasa
-					University of Applied Sciences in Finland. I graduated from Media
-					College Denmark in April 2024 with a degree in Web Development. I
-					started my second year of studies this year and I&#39;m really
-					enjoying it!{' '}
-				</p>{' '}
-				<p>
-					{' '}
-					I&#39;m really into everything technical and lately I&#39;ve been
-					getting more interested in data analytics and Python. I&#39;ve worked
-					a lot with Excel and SQL and I’m excited to keep learning more about
-					databases and cybersecurity too.{' '}
-				</p>{' '}
-				<p>
-					{' '}
-					My studies have also given me experience in marketing,
-					entrepreneurship and other business-related topics. I think this
-					knowledge is very useful and the combination of tech and business is
-					valuable.{' '}
-				</p>{' '}
-				<p>
-					{' '}
-					I’m comfortable with HTML and CSS and I enjoy working with JavaScript,
-					especially React and Next.js. I’ve also used SCSS, Tailwind and
-					MongoDB in a few of my projects.{' '}
-				</p>{' '}
-				<p>
-					{' '}
-					I love learning new things and working on projects that help me
-					grow.{' '}
+					Hey, I&apos;m Tiia — a Business IT student at VAMK in Vaasa. I finished my
+					Web Development degree at Media College Denmark in April 2024, and I&apos;m
+					now in my second year at VAMK.
 				</p>
 				<div className={styles.ageCalculator}>
-					<label htmlFor="birth-date">When is your birthday?</label>
-					<input
-						id="birth-date"
-						type="date"
-						value={birthDate}
-						onChange={(event) => setBirthDate(event.target.value)}
-						max={new Date().toISOString().split('T')[0]}
-					/>
-					{birthDate && (
-						<p aria-live="polite">
-							I am {calculateAge(birthDate)} years old student.
-						</p>
-					)}
+					<p>I&apos;m {calculateAge(BIRTH_DATE)}, born on April 5, 1998.</p>
 				</div>
+				<p>
+					Lately I&apos;ve been getting really into data analytics and Python. I use
+					Excel and SQL a lot, and I want to keep digging into databases and
+					cybersecurity too.
+				</p>
+				<p>
+					I&apos;ve also studied marketing, entrepreneurship and other business topics.
+					That side of things is useful when thinking about what people actually
+					need from a product.
+				</p>
+				<p>
+					Most of the time I&apos;m building with HTML, CSS and JavaScript — especially
+					React and Next.js. I&apos;ve also used SCSS, Tailwind and MongoDB in a few
+					projects. I like learning by making things and figuring stuff out as I go.
+				</p>
 			</div>
 		</section>
 	);

@@ -36,7 +36,7 @@
 }
 
 .aboutText p {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.75;
   margin: 0;
   color: #D6D6D6;
@@ -82,7 +82,7 @@
   }
 
   .aboutText p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -104,7 +104,7 @@
   }
 
   .aboutText p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
   }
 }

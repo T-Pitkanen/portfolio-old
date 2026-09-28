@@ -1,5 +1,5 @@
 import Link from "next/link";
-import topics from "@/data/topicsData";
+import topics from "@/data/topics/topicsData";
 import styles from "./slug.module.css";
 import { notFound } from "next/navigation";
 

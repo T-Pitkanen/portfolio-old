@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./topics.module.css";
-import topics from "@/data/topicsData";
+import topics from "@/data/topics/topicsData";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function TopicsPage({ limit }) {

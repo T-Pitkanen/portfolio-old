@@ -259,6 +259,7 @@
     padding-bottom: 8vh;
     flex-direction: column;
     justify-content: center;
+    gap: 3em;
   }
 
   .projectImage {
@@ -276,7 +277,11 @@
   }
 
   .infoContainer h4 {
+<<<<<<< HEAD
     padding-top: 2.5vh;
+=======
+    padding-top: 3vh;
+>>>>>>> 10f2f26985e73f4c2aa100e03545150d0c07ed16
   }
 
   .projectInfo {

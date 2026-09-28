@@ -109,7 +109,7 @@
 
 .slider {
   width: 100%;
-  max-width: 800px;
+  max-width: 720px;
   aspect-ratio: 4 / 3;
   margin: 0 auto;
   height: auto;
@@ -277,11 +277,7 @@
   }
 
   .infoContainer h4 {
-<<<<<<< HEAD
     padding-top: 2.5vh;
-=======
-    padding-top: 3vh;
->>>>>>> 10f2f26985e73f4c2aa100e03545150d0c07ed16
   }
 
   .projectInfo {
@@ -311,7 +307,7 @@
   }
 
   .slider {
-    max-width: 800px;
+    max-width: 720px;
   }
 
   .projectImage img {

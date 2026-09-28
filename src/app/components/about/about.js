@@ -1,110 +1,62 @@
-'use client';
-
 import styles from './about.module.css';
 
-const BIRTH_DATE = '1998-04-05';
+const timeline = [
+	{
+		date: '2022',
+		place: 'Denmark',
+		title: 'Web development degree',
+		text: 'Moved to Denmark and completed a web development degree. This is where I built my first real projects and realised this is what I like to do.',
+	},
+	{
+		date: '2024',
+		place: 'VAMK, Finland',
+		title: 'Business IT',
+		text: 'Returned to Finland to study Business IT, where software development meets business systems.',
+	},
+	{
+		date: 'Now',
+		place: 'VAMK, Vaasa',
+		title: 'Trainee, RDI project',
+		text: 'Building a web app powered by generative AI, including LLM integration and testing, backend work, a full frontend UI restyle, and piloting with real users.',
+	},
+];
 
-const calculateAge = (birthDate) => {
-	const today = new Date();
-	const birthday = new Date(`${birthDate}T00:00:00`);
-	let age = today.getFullYear() - birthday.getFullYear();
-	const birthdayHasNotPassed =
-		today.getMonth() < birthday.getMonth() ||
-		(today.getMonth() === birthday.getMonth() &&
-			today.getDate() < birthday.getDate());
-
-	if (birthdayHasNotPassed) age -= 1;
-	return age;
-};
-
-const About = () => {
-<<<<<<< HEAD
-	return (
-		<section className={styles.container} aria-labelledby="about-heading">
-			<div className={styles.aboutText}>
-				<h2 id="about-heading">ABOUT ME</h2>
+const About = () => (
+	<section className={styles.container} aria-labelledby="about-heading">
+		<div className={styles.aboutText}>
+			<div className={styles.details}>
+				<h3>About</h3>
 				<p>
-					Hey, I&apos;m Tiia — a Business IT student at VAMK in Vaasa. I finished my
-					Web Development degree at Media College Denmark in April 2024, and I&apos;m
-					now in my second year at VAMK.
-				</p>
-				<div className={styles.ageCalculator}>
-					<p>I&apos;m {calculateAge(BIRTH_DATE)}, born on April 5, 1998.</p>
-				</div>
-				<p>
-					Lately I&apos;ve been getting really into data analytics and Python. I use
-					Excel and SQL a lot, and I want to keep digging into databases and
-					cybersecurity too.
+					I have a web development degree from Denmark and am in my third year
+					of Business IT at VAMK.
 				</p>
 				<p>
-					I&apos;ve also studied marketing, entrepreneurship and other business topics.
-					That side of things is useful when thinking about what people actually
-					need from a product.
-				</p>
-				<p>
-					Most of the time I&apos;m building with HTML, CSS and JavaScript — especially
-					React and Next.js. I&apos;ve also used SCSS, Tailwind and MongoDB in a few
-					projects. I like learning by making things and figuring stuff out as I go.
+					I’m currently a trainee on an RDI project at VAMK, building a
+					generative AI-powered web application. My work includes LLM
+					integration and testing, backend development, a full frontend UI
+					restyle, and piloting the app with its target users.
 				</p>
 			</div>
-		</section>
-	);
-=======
-  return (
-    <div className={styles.container}>
-      <div className={styles.aboutText}>
-        <h2>ABOUT ME</h2>
-        <p>
-          I’m Tiia, a Business Information Technology student at
-          <strong> Vaasa University of Applied Sciences</strong> in Finland.
-        </p>
 
-        <p>
-          I finished my Web Development degree at{" "}
-          <strong>Media College Denmark</strong> in April 2024, and now I’m in
-          my second year at VAMK. I wanted to learn more about tech in general,
-          but I’ve also always enjoyed the business side of things, so I chose
-          Business IT. It’s been a really interesting mix so far.
-        </p>
-
-        <p>
-          I’ve always liked figuring out how things on the internet work —
-          that’s what got me into web development in the first place. I enjoy
-          building projects where I can actually see the results and turn ideas
-          into something real and functional. I’ve worked with{" "}
-          <strong>HTML, CSS, JavaScript, React, and Next.js</strong>, and I like
-          experimenting with tools like{" "}
-          <strong>Tailwind</strong>, <strong>SCSS</strong>,{" "}
-          <strong>MongoDB</strong>, and lately I’ve started learning{" "}
-          <strong>PostgreSQL</strong>.
-        </p>
-
-        <p>
-          Recently, I’ve gotten more interested in{" "}
-          <strong>data and analytics</strong>, as well as{" "}
-          <strong>databases</strong> and <strong>cloud services</strong>.
-          These are something I want to learn alot more of.
-        </p>
-
-        <p>
-          My studies also include <strong>marketing</strong>,{" "}
-          <strong>entrepreneurship</strong>, and different types of
-          <strong> sales management</strong>, which I think are great complements
-          to the technical side. We also cover{" "}
-          <strong>project management</strong> and <strong>leadership</strong>,
-          both of which are important skills for working life.
-        </p>
-
-        <p>
-          I like learning new things as much as I can, improving little by
-          little, and building projects that challenge me. Everything on my site
-          reflects what I’ve been learning so far and what I want to keep
-          getting better at.
-        </p>
-      </div>
-    </div>
-  );
->>>>>>> 10f2f26985e73f4c2aa100e03545150d0c07ed16
-};
+			<ol className={styles.timeline} aria-label="Education and experience">
+				{timeline.map((item) => (
+					<li
+						key={`${item.date}-${item.title}`}
+						className={styles.timelineItem}
+					>
+						<div className={styles.timelineMeta}>
+							<span>{item.date}</span>
+							<span>{item.place}</span>
+						</div>
+						<div>
+							<h3>{item.title}</h3>
+							<p>{item.text}</p>
+						</div>
+					</li>
+				))}
+			</ol>
+		</div>
+	</section>
+);
 
 export default About;

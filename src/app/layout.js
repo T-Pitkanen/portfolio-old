@@ -3,6 +3,7 @@ import './globals.css';
 import Navigation from './components/navigation/navigation';
 import Link from 'next/link';
 import Footer from './components/footer/footer';
+import ScrollToTop from './components/scrollToTop/scrollToTop';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
 				<SpeedInsights />
 				<Analytics />
 				<Footer />
+					<ScrollToTop />
 			</body>
 		</html>
 	);
